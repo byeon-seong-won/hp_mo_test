@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자몽랩(Jamong Lab)</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/sub.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="./assets/js/index.js" defer></script>
+    <link rel="shortcut icon" href="./assets/img/favicon.png">
+
+</head>
+<body>
+    <div class="lenis-wrap">
+        <div class="inner-lenis">
+            <div class="review sub">
+                <header id="header">
+                    <div class="inner">
+                        <div class="logo-area">
+                            <h1>
+                                <a href="index.html">
+                                    <img src="./assets/img/header-logo.png" alt="헤더 자몽랩 로고">
+                                </a>
+                            </h1>
+                        </div>
+                        <div class="pc-area">
+                            <nav class="gnb-box">
+                                <ul>
+                                    <li><a href="jamong.html">자몽랩</a></li>
+                                    <li><a href="every.html">에브리클릭</a></li>
+                                    <li><a href="quiz.html">퀴즈클릭</a></li>
+                                    <li><a href="review.html">리뷰클릭</a></li>
+                                </ul>
+                            </nav>
+                            <div class="link-area">
+                                <a href="contact.html">제휴문의</a>
+                            </div>
+                        </div>
+                        <!-- 모바일 메뉴 -->
+                        <div class="display toggle_menu_btn">
+                            <button class="toggle_menu_modal">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                        <div class="toggle_modal"> 
+                            <div class="modal-content">
+                                <a href="index.html" class="menu-logo">
+                                    <img src="./assets/img/header-logo-mo.png" alt="logo">
+                                </a>
+                                <a href="#none" class="btn-close">
+                                    <span class="xiCl">
+                                        <img src="./img/ico-close.png" alt="close">
+                                    </span>
+                                </a>
+                                <div class="modal-body">
+                                    <div class="toggle_menu_list_modal">
+                                        <ul>
+                                            <li><a href="jamong.html" class="depth1">자몽랩</a></li>
+                                            <li><a href="every.html" class="depth1">에브리클릭</a></li>
+                                            <li><a href="quiz.html" class="depth1">퀴즈클릭</a></li>
+                                            <li><a href="review.html" class="depth1">리뷰클릭</a></li>
+                                        </ul>
+                                        <a href="contact.html">제휴문의</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header> 
+        <main id="main">
+            <section class="sc-visual">
+                <div class="ser-inner">
+                    <div class="inner01">
+                        <div class="img-box">
+                            <img src="./assets/img/review-logo01.png" alt="">
+                            <img src="./assets/img/review-logo02.png" alt="">
+                        </div>
+                        <p class="txt-box">
+                            <span style="opacity: 0;display: block;">리뷰클릭은</span>
+                            리뷰클릭은<br>
+                            고객 참여를 유도하는 쇼핑형 캠페인으로
+                        </p>
+                        <p class="txt-box">
+                            검증된 리뷰와 상품 노출을 보장받는<br>
+                            스마트한 쇼핑 리워드 플랫폼입니다.
+                        </p>
+                        <div class="btn-box">
+                            <a href="./assets/pdf/리뷰클릭_통합_제안서_2024.pdf" target="_blank">리뷰클릭 서비스 제안서</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sc-cont01">
+                <div class="ser-inner">
+                    <div class="col-left">
+                        <div class="aniEffect">
+                            <h2 class="headline">01 기대효과</h2>
+                            <p class="title">다양한 매체를 통해</p>
+                            <p class="title">상품을 노출하고</p>
+                            <p class="title">판매 증진 효과 기대</p>
+                        </div>
+                    </div>
+                    <div class="col-right gsap">
+                        <div class="thumb-area">
+                            <img src="./assets/img/review-01-re.png" alt="">
+                            <img src="./assets/img/review-01-ico.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sc-cont02">
+                <div class="ser-inner">
+                    <div class="col-left">
+                        <div class="thumb-area gsap">
+                            <div>
+                                <img src="./assets/img/review-02-re.png" alt="리뷰클릭 서비스 이미지" class="review-02">
+                                <div class="review-box">
+                                    <img src="./assets/img/review-box01.png" alt class="review">
+                                    <img src="./assets/img/review-box02.png" alt class="review">
+                                </div>
+                                <img src="./assets/img/review-heart.png" alt="" class="review-heart">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-right">
+                        <div class="aniEffect">
+                            <h2 class="headline">02 기대효과</h2>
+                            <p class="title">실구매자들의</p>
+                            <p class="title">긍정적인 리뷰를 통한</p>
+                            <p class="title">브랜드 이미지 제고</p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sc-cont03">
+                <div class="ser-inner">
+                    <div class="col-left">
+                        <div class="aniEffect">
+                            <h2 class="headline">03 기대효과</h2>
+                            <p class="title">AI 분석을 활용한</p>
+                            <p class="title">검증시스템으로</p>
+                            <p class="title">리뷰 신뢰도 향상</p>
+                        </div>
+                    </div>
+                    <div class="col-right gsap">
+                        <div class="thumb-area">
+                            <img src="./assets/img/review-03-re.png" alt="리뷰클릭 서비스 이미지" class="review-03">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+            </div>
+            <footer>
+        <div class="inner">
+            <div class="col-left">
+                <div class="logo-area">
+                    <a href="index.html"><img src="./assets/img/footer-logo.png" alt="푸터 자몽랩 로고"></a>
+                    <span>주식회사 자몽랩</span>
+                </div>
+                <ul class="util-area">
+                    <li class="util-item"><a href="#">이용약관</a></li>
+                    <li class="util-item"><a href="#">개인정보 처리방침</a></li>
+                    <li class="util-item"><a href="#">오시는 길</a></li>
+                </ul>
+                <address>
+                    대표이사 : 조준형&nbsp; | &nbsp;사업자등록번호 : 267-81-03235<br>
+                    주소 : 서울특별시 서초구 서초대로 60길 18, 7층 (정인빌딩)<br>
+                    이메일 :<a href="mailto:support@jamonglab.com"> support@jamonglab.com</a>
+                </address>
+                <small>
+                    Copyright &copy; JAMONGLAB INC. All Rights Reserved.
+                </small>
+            </div>
+            <div class="col-right">
+                <ul class="dw-list">
+                    <li class="dw-item"><a href="https://play.google.com/store/apps/details?id=everyclick.lusoft.android&pcampaignid=web_share"></a></li>
+                    <li class="dw-item"><a href="#"></a></li>
+                </ul>
+                <div class="customer-area">
+                    <span class="tel">대표번호</span>
+                    <a href="tel:02-588-4568">02-588-4568</a>
+                    <span class="time">평일 10:00~17:00</span>
+                    <span class="time">(점심시간 12:00~13:00)</span>
+                </div>
+            </div>
+        </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

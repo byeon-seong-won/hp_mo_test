@@ -1,0 +1,339 @@
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+}
+
+/* 자몽 , 서비스 소개 모두 */
+.sub section > div {
+    max-width: 1500px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+
+
+
+
+/* --------------------- 서비스 소개페이지 --------------------- */
+
+section:not(.sc-visual) .ser-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 96px 158px 83px;
+}
+/* section .inner > div {
+    flex: 1;
+} */
+
+
+/* 비주얼 */
+.sc-visual {
+    margin-top: 233px;
+    margin-bottom: 120px;
+}
+.sc-visual .inner01 {
+    margin: 0 auto;
+    width: 50%;
+}
+.sc-visual .img-box {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 89px;
+}
+.sc-visual .img-box img:nth-child(1) {
+    width: 40px;
+}
+.review .sc-visual .img-box img:nth-child(2) {
+    width: 230px;
+}
+.quiz .sc-visual .img-box img:nth-child(2) {
+    width: 223px;
+}
+.every .sc-visual .img-box img:nth-child(2) {
+    width: 233px;
+}
+.sc-visual .img-box img:nth-child(1) {
+    margin-top: 15px;
+}
+.every .sc-visual .img-box img:nth-child(1) {
+    margin-top: 5px;
+}
+
+
+
+
+.sc-visual .txt-box {
+    color: #555555;
+    text-align: center;
+    font-size: 23px;
+    line-height: 34px;
+    font-weight: 400;
+    letter-spacing: -0.1rem;
+}
+.sc-visual .txt-box:last-of-type {
+    margin-top: 25px;
+}
+.sc-visual .btn-box {
+    margin-top:80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+.btn-box a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    border-radius: 59px;
+}
+.every .sc-visual .btn-box a:nth-child(1) {
+    background: #28BBB0;
+    color: #fff;
+    width: 199px;
+    height: 66px;
+}
+.every .sc-visual .btn-box a:nth-child(1)::before {
+    content: '';
+    display: inline-block;
+    background: url(../img/ico-google.png) no-repeat center / 100%;
+    width: 24px;
+    height: 24px;
+    margin-right: 6px;
+}
+.every .sc-visual .btn-box a:nth-child(2) {
+    border: 1px solid #28BBB0;
+    width: 178px;
+    height: 66px;
+    color: #28BBB0;
+}
+.every .sc-visual .btn-box a:nth-child(2)::before {
+    content: '';
+    display: inline-block;
+    background: url(../img/ico-apple.png) no-repeat center / 100%;
+    width: 18px;
+    height: 21px;
+    margin-right: 6px;
+}
+.quiz .sc-visual .btn-box a:nth-child(1) {
+    border: 1px solid #F77514;
+    color: #F77514;
+    width: 279px;
+    height: 66px;
+}
+.quiz .sc-visual .btn-box a::after {
+    content: '';
+    display: inline-block;
+    margin-left: 4px;
+    width: 26px;
+    height: 26px;
+    background: url(../img/ico-down-quiz.png) no-repeat center / 100%;
+}
+.review .sc-visual .btn-box a:nth-child(1) {
+    display: flex;
+    align-items: center;
+    border: 1px solid #E50B14;
+    color: #E50B14;
+    width: 279px;
+    height: 66px;
+}
+.review .sc-visual .btn-box a::after {
+    content: '';
+    display: inline-block;
+    margin-left: 4px;
+    width: 26px;
+    height: 26px;
+    background: url(../img/ico-down-review.png) no-repeat center / 100%;
+}
+
+
+
+
+/* 섹션 타이틀 */
+.headline {
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: -0.02em;
+    margin-bottom: 28px;
+}
+.comp .headline {
+    color: #F16365;
+}
+.every .headline {
+    color: #28BBB0;
+}
+.quiz .headline {
+    color: #F77514;
+}
+.review .headline {
+    color: #E50B14;
+}
+
+.title {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 50px;
+    color: #141414;
+    letter-spacing: -0.02em;
+}
+
+/* .aniEffect {
+    opacity: 0;
+    transform: translateY(200px);
+} */
+.aniEffect-main {
+    opacity: 0;
+    transform: translateY(200px);
+}
+.aniEffect-sh,
+.aniEffect-tit {
+    transform: translateY(100px);
+}
+.aniEffect-maintit,
+.aniEffect-sh {
+    opacity: 0;
+    transform: translateY(150px); 
+    transition: .8s;
+}
+.aniEffect-maintit.click,
+.aniEffect-sh.click {
+    opacity: 1; 
+    transform: translateY(0); 
+}
+
+
+.pc.pc-display {
+    display: block;
+    border: 1px solid #000;
+}
+.mo.mo-display {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 반응형 */
+@media (max-width:1500px) {
+
+ 
+
+}
+
+
+@media (max-width:1300px) {
+/* 
+    .comp section > div {
+        transform: scale(0.9);
+    }
+*/
+
+    /* 자몽랩 */
+    /* .sub.comp section > div {
+        max-width: 1200px;
+        transform: scale(0.9);
+    } */
+    .sc-ident .title-box {
+        margin-top: 210px;
+    }
+    .sc-mission .inner {
+        padding: 123px 0;
+    }
+    .sub.every section > div,
+    .sub.quiz section > div,
+    .sub.review section > div {
+        max-width: 1200px;
+    }
+
+
+
+
+}
+
+
+
+@media (max-width:1200px) {
+
+}
+
+
+@media (max-width:1024px) {
+
+}
+
+@media (max-width:768px) {
+
+    section:not(.sc-visual) .ser-inner {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .pc.pc-display {
+        display: none;
+    }
+    .mo.mo-display {
+        display: block;
+    }
+    .headline {
+        font-size: 3.38vw;
+        margin-bottom: 3.64vw;
+    }
+    .title {
+        font-size: 5.46vw;
+        line-height: 7.03vw;
+    }
+    .sc-visual {
+        margin-top: 39.3vw;
+        margin-bottom: 20vw;
+    }
+    .sc-visual .img-box {
+        margin-bottom: 20.9vw;
+    }
+    .sc-visual .txt-box {
+        font-size: 3.38vw;
+        line-height: 4.94vw;
+        letter-spacing: unset;
+    }
+    .sc-visual .inner01 {
+        width: 100%;
+    }
+    .sc-visual .btn-box {
+        margin-top: 16.53vw;
+    }
+
+
+    .every .sc-visual .btn-box a:nth-child(1) {
+        width: 25.9vw;
+        height: 8.59vw;
+    }
+    .every .sc-visual .btn-box a:nth-child(2) {
+        width: 23.17vw;
+        height: 8.59vw;
+    }
+    .btn-box a {
+        font-size: 2.6vw;
+    }
+
+
+
+}
+
+
