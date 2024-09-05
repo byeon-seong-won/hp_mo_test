@@ -241,156 +241,7 @@
 
 
 
-  // sc-comp 텍스트
-  gsap.utils.toArray('.aniEffect-main').forEach(effect => {
-    gsap.fromTo(effect, 
-        {
-          opacity: 0,
-          y: 200
-        }, 
-        {
-          opacity: 1,
-          y: 0,
-          duration: 1,
-          ease: "power2.out",
-          scrollTrigger: {
-            trigger: effect,
-            start: "top 80%",  
-            end: "bottom 60%", 
-            scrub: true, 
-            scroller: '.lenis-wrap', 
-          }
-        }
-    );
-  });
-
-  // gsap.utils.toArray('.comp .aniEffect-sh').forEach(effect => {
-  //   gsap.fromTo(effect, 
-  //       {
-  //         opacity: 0,
-  //         y: 100
-  //       }, 
-  //       {
-  //         opacity: 1,
-  //         y: 0,
-  //         duration: 1,
-  //         ease: "power2.out",
-  //         scrollTrigger: {
-  //           trigger: effect,
-  //           start: "-100% 48%",  
-  //           end: "bottom 60%", 
-  //           scrub: true, 
-  //         }
-  //       }, "main"
-  //   );
-  // });
-
-  gsap.utils.toArray('.comp .aniEffect-tit').forEach(effect => {
-    gsap.fromTo(effect, 
-        {
-          opacity: 0,
-          y: 100
-        }, 
-        {
-          opacity: 1,
-          y: 0,
-          duration: 1,
-          ease: "power2.out",
-          scrollTrigger: {
-            trigger: effect,
-            start: "-40% 70%",  
-            end: "bottom 60%", 
-            scrub: true, 
-            scroller: '.lenis-wrap', 
-          }
-        }
-    );
-  });
-
-
-
-
-  // ScrollTrigger.matchMedia({
-  //   "(min-width: 769px)": function() {
-      
-  //   },
-  // });
-
-  // ScrollTrigger.matchMedia({
-  //   "(max-width: 768px)": function() {
-  //     gsap.utils.toArray('.aniEffect').forEach(effect => {
-  //       gsap.fromTo(effect, 
-  //         {
-  //           opacity: 0,
-  //           y: 200
-  //         }, 
-  //         {
-  //           opacity: 1,
-  //           y: 0,
-  //           duration: 1,
-  //           ease: "power2.out",
-  //           scrollTrigger: {
-  //             trigger: effect,
-  //             start: "top 80%",  
-  //             end: "bottom 60%", 
-  //             scrub: true, 
-  //             scroller: '.lenis-wrap', 
-  //           }
-  //         }, 'scroll'
-  //       );
-  //     });
-  //     gsap.utils.toArray('.gsap').forEach(effect => {
-  //       gsap.fromTo(effect, 
-  //         {
-  //           y: 200
-  //         }, 
-  //         {
-  //           y: 0,
-  //           duration: 1,
-  //           ease: "power2.out",
-  //           scrollTrigger: {
-  //             trigger: effect,
-  //             start: "top 80%",  
-  //             end: "bottom 60%", 
-  //             scrub: true, 
-  //             scroller: '.lenis-wrap', 
-  //           }
-  //         }, 'scroll'
-  //       );
-  //     });
-  //   },
-  // });
-
-
-
-    // "(max-width: 768px)": function() {
-    //   const effects = gsap.utils.toArray('.aniEffect, .gsap');
-    //     effects.forEach(effect => {
-    //       gsap.fromTo(effect, 
-    //         {
-    //           opacity: 0,
-    //           y: 200
-    //         }, 
-    //         {
-    //           opacity: 1,
-    //           y: 0,
-    //           duration: 1,
-    //           ease: "power2.out",
-    //           scrollTrigger: {
-    //             trigger: effect,
-    //             start: "top 80%",  
-    //             end: "bottom 60%", 
-    //             scrub: true, 
-    //             scroller: '.lenis-wrap', 
-    //           }
-    //         }
-    //       );
-    //     });
-    //   },
-
-
-  // });
-
+  
 
 
 
@@ -400,6 +251,52 @@
   ScrollTrigger.matchMedia({
     "(min-width: 769px)": function() {
       // 소개페이지
+      gsap.utils.toArray('.aniEffect-main').forEach(effect => {
+        gsap.fromTo(effect, 
+            {
+              opacity: 0,
+              y: 200
+            }, 
+            {
+              opacity: 1,
+              y: 0,
+              duration: 1,
+              ease: "power2.out",
+              scrollTrigger: {
+                trigger: effect,
+                start: "top 80%",  
+                end: "bottom 60%", 
+                scrub: true, 
+                scroller: '.lenis-wrap', 
+              }
+            }
+        );
+      });
+    
+      gsap.utils.toArray('.comp .aniEffect-tit').forEach(effect => {
+        gsap.fromTo(effect, 
+            {
+              opacity: 0,
+              y: 100
+            }, 
+            {
+              opacity: 1,
+              y: 0,
+              duration: 1,
+              ease: "power2.out",
+              scrollTrigger: {
+                trigger: effect,
+                start: "-40% 70%",  
+                end: "bottom 60%", 
+                scrub: true, 
+                scroller: '.lenis-wrap', 
+              }
+            }
+        );
+      });
+
+
+
       gsap.from(".sc-mission .aniEffect-left", {
         scrollTrigger: {
           trigger: ".sc-mission .aniEffect-left", 
@@ -504,63 +401,118 @@
 
   ScrollTrigger.matchMedia({
     "(max-width: 768px)": function() {
-      console.log('MatchMedia triggered for max-width: 768px');
 
+
+      // sc-comp 텍스트
+      let tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: '.sc-ident .inner',  // 공통 트리거 설정
+          start: "top 50%",  
+          end: "top 20%", 
+          scrub: true, 
+          scroller: '.lenis-wrap',
+        }
+      });
+      
+      // .aniEffect-main 애니메이션
+      gsap.utils.toArray('.aniEffect-main').forEach(effect => {
+        tl.fromTo(effect, 
+          {
+            opacity: 0,
+            y: 100
+          }, 
+          {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            ease: "power2.out"
+          },'mainTxt'
+        );
+      });
+      
+      // .aniEffect-tit 애니메이션
+      gsap.utils.toArray('.comp .aniEffect-tit').forEach(effect => {
+        tl.fromTo(effect, 
+          {
+            opacity: 0,
+            y: 100
+          }, 
+          {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            ease: "power2.out"
+          },'mainTxt'
+        );
+      });
 
       gsap.from(".sc-mission .aniEffect-left", {
         scrollTrigger: {
-          trigger: ".sc-mission .aniEffect-left", 
+          trigger: ".sc-mission", 
           start: "10% 80%",       
-          end: "top 30%",         
-          scrub: true,
-          scroller: '.lenis-wrap', 
-        },
-        x: -100,                 
-        opacity: 0,              
-        duration: 1              
-      });
-    
-      // sc-mission: 오른쪽에서 왼쪽으로 등장
-      gsap.from(".sc-mission .aniEffect-right", {
-        scrollTrigger: {
-          trigger: ".sc-mission .aniEffect-right", 
-          start: "10% 80%",       
-          end: "top 30%",         
-          scrub: true,
-          scroller: '.lenis-wrap', 
-        },
-        y: -100,                  
-        opacity: 0,              
-        duration: 1              
-      });
-    
-      // sc-vision: 왼쪽에서 오른쪽으로 등장
-      gsap.from(".sc-vision .aniEffect-left", {
-        scrollTrigger: {
-          trigger: ".sc-vision .aniEffect-left", 
-          start: "10% 100%",    
           end: "top 50%",         
           scrub: true,
           scroller: '.lenis-wrap', 
         },
-        x: 100,                 
-        opacity: 0,    
+        x: -50,                 
+        opacity: 0,              
         duration: 1              
-      });
+      }, 'mission');
     
-      // sc-vision: 오른쪽에서 왼쪽으로 등장
+      gsap.fromTo(".sc-mission .aniEffect-right", {
+          opacity: 0,
+          y: 150
+        }, 
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: ".sc-mission", 
+            start: "10% 70%",       
+            end: "top 10%",    
+            scrub: true,
+            scroller: '.lenis-wrap', 
+          }
+        }, 'mission'
+      );
+    
+
+      gsap.fromTo(".sc-vision .aniEffect-left", {
+        opacity: 0,
+        y: 150
+      }, 
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".sc-vision", 
+          start: "10% 50%",      
+          end: "top 0%",    
+          scrub: true,
+          scroller: '.lenis-wrap', 
+        }
+      }, 'vision'
+    );
+
       gsap.from(".sc-vision .aniEffect-right", {
         scrollTrigger: {
-          trigger: ".sc-vision .aniEffect-right", 
-          start: "10% 100%",      
-          end: "top 50%",         
+          trigger: ".sc-vision", 
+          start: "20% 90%",    
+          end: "top 10%",         
           scrub: true,
-          scroller: '.lenis-wrap',              
+          scroller: '.lenis-wrap', 
         },
-        y: -100,                
-        opacity: 0,        
+        x: 50,                 
+        opacity: 0,    
         duration: 1              
-      });
+      }, 'vision'
+    );
+
+    
 
 
       // 서브페이지

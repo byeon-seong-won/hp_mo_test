@@ -1278,6 +1278,7 @@ section.sc-attend .ser-inner {
     }
     .comp .sc-ident {
         margin-top: 53.2vw;
+        padding-bottom: 53.5vw;
         text-align: center;
     }
     .sc-ident::after {
@@ -1305,6 +1306,7 @@ section.sc-attend .ser-inner {
     .sc-ident .desc p {
         margin-top: 18vw;
         font-size: 4.42vw;
+        padding: 0 13.02vw;
     }
     .sc-ident .desc span {
         display: block;
@@ -1314,15 +1316,62 @@ section.sc-attend .ser-inner {
         line-height: 4.94vw;
         font-weight: 400;
     }
-    .sc-mission .inner, .sc-vision .inner {
+    .sc-mission .inner {
         flex-direction: column;
     }
+    .sc-vision .inner {
+        flex-direction: column-reverse;
+    }
+    .sc-mission .inner, .sc-vision .inner {
+        align-items: unset;
+        width: 100%;
+    }
 
-
-
-
-
-
+    .sc-mission .col-left {
+        padding-left: 12.23vw;
+    }
+    .sc-mission .title, .sc-vision .title {
+        font-size: 5.85vw;
+        line-height: 7.81vw;
+    }
+    .sc-mission .headline, .sc-vision .headline {
+        margin-bottom: 1.82vw
+    }
+    .sc-mission .subTit, .sc-vision .subTit {
+        margin-top: 2.6vw;
+        font-size: 2.86vw;
+        line-height: 3.9vw;
+    }
+    .sc-vision .subTit {
+        padding-left: 13.02vw;
+    }
+    .sc-mission .inner > div, .sc-vision .inner > div {
+        flex: 1;
+        width: 100%;
+    }
+    .sc-mission .inner .col-right {
+        width: 83.46vw;
+    }
+    .sc-mission .inner .col-right {
+        margin: 7.29vw 8.33vw 0;
+    }
+    .sc-mission .inner {
+        padding: 0 0 15.88vw 0;
+    }
+    .sc-vision .inner {
+        padding: 16.92vw 0 16.92vw 0;
+    }
+    .sc-vision .inner .col-right {
+        text-align: right;
+    }
+    .sc-vision .inner .col-left {
+        width: 80.34vw;
+        margin: 6.9vw 9.9vw 0;
+    }
+    .sc-vision .inner .col-right {
+        padding-right: 16.14vw;
+        margin-left: 0;
+    }
 
 
     /* 에브리클릭 */

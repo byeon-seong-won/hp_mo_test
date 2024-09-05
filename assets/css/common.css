@@ -185,18 +185,6 @@ section:not(.sc-visual) .ser-inner {
     letter-spacing: -0.02em;
 }
 
-/* .aniEffect {
-    opacity: 0;
-    transform: translateY(200px);
-} */
-.aniEffect-main {
-    opacity: 0;
-    transform: translateY(200px);
-}
-.aniEffect-sh,
-.aniEffect-tit {
-    transform: translateY(100px);
-}
 .aniEffect-maintit,
 .aniEffect-sh {
     opacity: 0;
@@ -208,7 +196,6 @@ section:not(.sc-visual) .ser-inner {
     opacity: 1; 
     transform: translateY(0); 
 }
-
 
 .pc.pc-display {
     display: block;
