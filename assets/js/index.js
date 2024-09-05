@@ -20,13 +20,11 @@
 
 
 
-    $(".toggle_menu_btn").click(function() {
-      $(".toggle_modal").fadeIn();
+    $(".hamburger").click(function() {
+      $('.hamburger').toggleClass('is-active')
+      $(".toggle_modal").fadeToggle();
     })
-  
-    $(".btn-close, .depth1").click(function() {
-      $(".toggle_modal").fadeOut();
-    })
+ 
   
 
 

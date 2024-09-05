@@ -920,7 +920,7 @@ section.sc-attend .ser-inner {
     background: url(../img/review-blind.png) no-repeat center / 100%;
     transform: rotate(180deg);
 }
-.review .sc-cont01 .thumb-area img:nth-child(2) {
+.review .sc-cont01 .thumb-area .review-01-ico {
     position: absolute;
     width: 89px;
     bottom: 150px;
@@ -941,7 +941,7 @@ section.sc-attend .ser-inner {
     background-color: #FEFEFE;
 }
 .review .sc-cont02 .ser-inner {
-    padding: 96px 216px 83px 278px;
+    padding: 96px 216px 83px 36px;
 }
 .review .sc-cont02 .thumb-area {
     position: relative;
@@ -952,6 +952,7 @@ section.sc-attend .ser-inner {
 .review .sc-cont02 .thumb-area .review-02 {
     display: inline-block;
     height: 620px;
+    margin-left: -100px;
 }
 .review .sc-cont02 .col-left .review-box {
     position: absolute;
@@ -1265,6 +1266,9 @@ section.sc-attend .ser-inner {
 
 
     /* 자몽랩 소개 */
+    .comp .sc-comp {
+        margin-top: 40.62vw;
+    }
     .comp .sc-comp .inner {
         padding: 0;
     }
@@ -1276,6 +1280,9 @@ section.sc-attend .ser-inner {
     .comp .sc-ident {
         margin-top: 53.2vw;
         text-align: center;
+    }
+    .sc-ident::after {
+        height: 48vw;
     }
     .sc-ident .headline {
         margin-left: 0;
@@ -1416,19 +1423,6 @@ section.sc-attend .ser-inner {
 
 
     /* 퀴즈클릭 */
-    .quiz .sc-visual .img-box img:nth-child(2) {
-        width: 30.7vw;
-    }
-    .quiz .sc-visual .btn-box a:nth-child(1) {
-        width: 41.6vw;
-        height: 10.15vw;
-        font-size: 3.25vw;
-    }
-    .quiz .sc-visual .btn-box a::after {
-        margin-left: 0.78vw;
-        width: 3.9vw;
-        height: 3.9vw;
-    }
 
     .quiz .sc-cont01 .ser-inner {
         text-align: center;
@@ -1469,7 +1463,171 @@ section.sc-attend .ser-inner {
     .quiz .sc-cont02 .col-left {
         margin-top: 18.2vw;
     }
+    .quiz .sc-cont03 .ser-inner {
+        padding: 19.53vw 0 31vw 0;
+        text-align: center;
+    }
+    .quiz .sc-cont03 .thumb-area img {
+        width: 78vw;
+    }
+    .quiz .sc-cont03 .ser-inner > .col-left {
+        margin-bottom: 16.9vw;
+    }
 
+    .quiz .sc-cont04 .ser-inner {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 19vw 0 13vw 0;
+    }
+
+    .quiz .sc-cont04 .col-left::after,
+    .quiz .sc-cont04 .col-left::before {
+        content: none;
+    }
+    .quiz .sc-cont04 .thumb-area > div img {
+        width: 127vw;
+        margin-bottom: 0;
+    }
+    .quiz .sc-cont04 .ser-inner > div {
+        width: 100%;
+    }
+    .quiz .sc-cont04 .ser-inner .col-left {
+        margin-top: 10vw;
+    }
+
+
+
+
+
+    /* 리뷰클릭 */
+
+
+    .review .sc-cont01 .ser-inner {
+        padding: 15.2vw 0 25.1vw 0;
+        text-align: center;
+    }
+    .review .sc-cont01 .ser-inner > div {
+        width: 100%;
+    }
+    .review .sc-cont01 .ser-inner .col-right {
+        margin-top: 10vw;
+    }
+    .review .sc-cont01 .thumb-area .mo-display {
+        width: 110vw;
+    }
+    .review .sc-cont01 .thumb-area::after,
+    .review .sc-cont01 .thumb-area::before {
+        content: none;
+    }
+
+    .review .sc-cont02 .ser-inner {
+        padding: 19.53vw 0;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .review .sc-cont02 .ser-inner > div {
+        width: 100%;
+    }
+    .review .sc-cont02 .ser-inner .col-left {
+        margin-top: 12vw;
+    }
+    .review .sc-cont02 .thumb-area .review-02 {
+        height: 75.65vw;
+    }
+    .review .sc-cont02 .col-left .review-heart {
+        position: absolute;
+        left: 50%;
+        top: 90px;
+        width: 28.2vw;
+        transform: translateX(-50%);
+        margin-left: -50px;
+    }
+
+
+    .review .sc-cont03 .ser-inner {
+        text-align: center;
+        padding: 19.53vw 0 24.73vw 0;
+    }
+
+    .review .sc-cont03 .ser-inner > div {
+        width: 1000%;
+    }
+    .review .sc-cont03 .thumb-area .review-03.pc {
+        display: none;
+    }
+    .review .sc-cont03 .thumb-area .review-03 {
+        display: inline-block;
+        margin-bottom: 0;
+        height: 78.12vw;
+    }
+    .review .sc-cont03 .ser-inner .col-right {
+        margin-top: 4.16vw;
+    }
+
+
+
+
+
+
+
+    /* 제휴문의 */
+    .sc-cont {
+        padding: 9.11vw 9.11vw 0;
+    }
+    .sc-cont .map-area {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .sc-cont .map-area p {
+        font-size: 2.86vw;
+        line-height: 3.9vw;
+        margin-top: 0;
+        padding: 0;
+        margin-bottom: 2.34vw;
+    }
+    .sc-cont .map-area p:before {
+        width: 5.33vw;
+        height: 5.33vw;
+        margin-right: 1.69vw;
+    }
+    .sc-cont .map {
+        height: 84.37vw;
+    }
+    .sc-title {
+        margin-top: 13vw;
+        padding: 8.2vw 0;
+    }
+    .sc-title .headline {
+        margin-bottom: 0;
+        font-size: 3.38vw;
+        line-height: 3.77vw;
+        margin-top: 2.6vw;
+    }
+    .sc-title img {
+        width: 5.98vw;
+    }
+    .sc-cont .customer-area {
+        padding-left: 0;
+        margin-top: 4.3vw;
+        padding-bottom: 21.48vw;
+    }
+    .sc-cont .customer-area a:nth-child(1):before,
+    .sc-cont .customer-area a:nth-child(2):before, 
+    .sc-cont .customer-area a:nth-child(3):before, 
+    .sc-cont .customer-area a:nth-child(4):before {
+        width: 4.3vw;
+        height: 4.3vw;
+        margin-right: 2.1vw;
+    }
+    .sc-cont .customer-area a {
+        font-size: 2.6vw;
+    }
+    .sc-cont a:not(:first-child) em:nth-child(1) {
+        width: 19.53vw;
+    }
+    .sc-cont .customer-area a:nth-child(2) {
+        margin-top: 3vw;
+    }
 
 
 }

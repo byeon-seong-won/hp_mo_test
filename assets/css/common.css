@@ -308,7 +308,7 @@ section:not(.sc-visual) .ser-inner {
         margin-bottom: 20.9vw;
     }
     .sc-visual .txt-box {
-        font-size: 3.38vw;
+        font-size: 3.65vw;
         line-height: 4.94vw;
         letter-spacing: unset;
     }
@@ -328,10 +328,36 @@ section:not(.sc-visual) .ser-inner {
         width: 23.17vw;
         height: 8.59vw;
     }
+    .quiz .sc-visual .img-box img:nth-child(2) {
+        width: 30.7vw;
+    }
+    .quiz .sc-visual .btn-box a:nth-child(1) {
+        width: 41.6vw;
+        height: 10.15vw;
+        font-size: 3.25vw;
+    }
+    .quiz .sc-visual .btn-box a::after {
+        margin-left: 0.78vw;
+        width: 3.9vw;
+        height: 3.9vw;
+    }
+
     .btn-box a {
         font-size: 2.6vw;
     }
-
+    .review .sc-visual .img-box img:nth-child(2) {
+        width: 33.07vw;
+    }
+    .review .sc-visual .btn-box a:nth-child(1) {
+        width: 41.6vw;
+        height: 10.15vw;
+        font-size: 3.25vw;
+    }
+    .review .sc-visual .btn-box a::after {
+        margin-left: 0.78vw;
+        width: 3.9vw;
+        height: 3.9vw;
+    }
 
 
 }
