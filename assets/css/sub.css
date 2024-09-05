@@ -952,7 +952,6 @@ section.sc-attend .ser-inner {
 .review .sc-cont02 .thumb-area .review-02 {
     display: inline-block;
     height: 620px;
-    margin-left: -100px;
 }
 .review .sc-cont02 .col-left .review-box {
     position: absolute;
@@ -1533,6 +1532,7 @@ section.sc-attend .ser-inner {
     }
     .review .sc-cont02 .thumb-area .review-02 {
         height: 75.65vw;
+        margin-left: -15.62vw;
     }
     .review .sc-cont02 .col-left .review-heart {
         position: absolute;

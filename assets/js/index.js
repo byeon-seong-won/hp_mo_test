@@ -13,6 +13,7 @@
 
 
     // --------------- GSAP 공통 효과 --------------- 
+    gsap.registerPlugin(ScrollTrigger);
     gsap.defaults({
       ease:"none"
     })
@@ -309,59 +310,96 @@
 
 
 
-
-  // gsap.utils.toArray('.aniEffect').forEach(effect => {
-  //   gsap.fromTo(effect, 
-  //     {
-  //       opacity: 0,
-  //       y: 200
-  //     }, 
-  //     {
-  //       opacity: 1,
-  //       y: 0,
-  //       duration: 1,
-  //       ease: "power2.out",
-  //       scrollTrigger: {
-  //         trigger: effect,
-  //         start: "top 80%",  
-  //         end: "bottom 60%", 
-  //         scrub: true, 
-  //         scroller: '.lenis-wrap', 
-  //       }
-  //     }
-  //   );
-  // });
-
-  // gsap.utils.toArray('.gsap').forEach(effect => {
-  //   gsap.fromTo(effect, 
-  //     {
-  //       y: 200
-  //     }, 
-  //     {
-  //       y: 0,
-  //       duration: 1,
-  //       ease: "power2.out",
-  //       scrollTrigger: {
-  //         trigger: effect,
-  //         start: "top 80%",  
-  //         end: "bottom 60%", 
-  //         scrub: true, 
-  //         scroller: '.lenis-wrap', 
-  //       }
-  //     }
-  //   );
-  // });
-
-
-
-
-
-
-
-  // sc-mission: 왼쪽에서 오른쪽으로 등장
-  ScrollTrigger.matchMedia({
-    "(min-width: 768px)": function() {
+  // ScrollTrigger.matchMedia({
+  //   "(min-width: 769px)": function() {
       
+  //   },
+  // });
+
+  // ScrollTrigger.matchMedia({
+  //   "(max-width: 768px)": function() {
+  //     gsap.utils.toArray('.aniEffect').forEach(effect => {
+  //       gsap.fromTo(effect, 
+  //         {
+  //           opacity: 0,
+  //           y: 200
+  //         }, 
+  //         {
+  //           opacity: 1,
+  //           y: 0,
+  //           duration: 1,
+  //           ease: "power2.out",
+  //           scrollTrigger: {
+  //             trigger: effect,
+  //             start: "top 80%",  
+  //             end: "bottom 60%", 
+  //             scrub: true, 
+  //             scroller: '.lenis-wrap', 
+  //           }
+  //         }, 'scroll'
+  //       );
+  //     });
+  //     gsap.utils.toArray('.gsap').forEach(effect => {
+  //       gsap.fromTo(effect, 
+  //         {
+  //           y: 200
+  //         }, 
+  //         {
+  //           y: 0,
+  //           duration: 1,
+  //           ease: "power2.out",
+  //           scrollTrigger: {
+  //             trigger: effect,
+  //             start: "top 80%",  
+  //             end: "bottom 60%", 
+  //             scrub: true, 
+  //             scroller: '.lenis-wrap', 
+  //           }
+  //         }, 'scroll'
+  //       );
+  //     });
+  //   },
+  // });
+
+
+
+    // "(max-width: 768px)": function() {
+    //   const effects = gsap.utils.toArray('.aniEffect, .gsap');
+    //     effects.forEach(effect => {
+    //       gsap.fromTo(effect, 
+    //         {
+    //           opacity: 0,
+    //           y: 200
+    //         }, 
+    //         {
+    //           opacity: 1,
+    //           y: 0,
+    //           duration: 1,
+    //           ease: "power2.out",
+    //           scrollTrigger: {
+    //             trigger: effect,
+    //             start: "top 80%",  
+    //             end: "bottom 60%", 
+    //             scrub: true, 
+    //             scroller: '.lenis-wrap', 
+    //           }
+    //         }
+    //       );
+    //     });
+    //   },
+
+
+  // });
+
+
+
+
+
+
+
+  ScrollTrigger.matchMedia({
+    "(min-width: 769px)": function() {
+      // 소개페이지
       gsap.from(".sc-mission .aniEffect-left", {
         scrollTrigger: {
           trigger: ".sc-mission .aniEffect-left", 
@@ -416,20 +454,59 @@
         opacity: 0,        
         duration: 1              
       });
+
+      
+      // 서브페이지
+      gsap.utils.toArray('.aniEffect').forEach(effect => {
+        gsap.fromTo(effect, 
+          {
+            opacity: 0,
+            y: 200
+          }, 
+          {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            ease: "power2.out",
+            scrollTrigger: {
+              trigger: effect,
+              start: "top 80%",  
+              end: "bottom 60%", 
+              scrub: true, 
+              scroller: '.lenis-wrap', 
+            }
+          }
+        );
+      });
+      gsap.utils.toArray('.gsap').forEach(effect => {
+        gsap.fromTo(effect, 
+          {
+            y: 200
+          }, 
+          {
+            y: 0,
+            duration: 1,
+            ease: "power2.out",
+            scrollTrigger: {
+              trigger: effect,
+              start: "top 80%",  
+              end: "bottom 60%", 
+              scrub: true, 
+              scroller: '.lenis-wrap', 
+            }
+          }
+        );
+      });
     },
   });
 
 
 
-
-
-
-
-
-
-
   ScrollTrigger.matchMedia({
     "(max-width: 768px)": function() {
+      console.log('MatchMedia triggered for max-width: 768px');
+
+
       gsap.from(".sc-mission .aniEffect-left", {
         scrollTrigger: {
           trigger: ".sc-mission .aniEffect-left", 
@@ -483,6 +560,59 @@
         y: -100,                
         opacity: 0,        
         duration: 1              
+      });
+
+
+      // 서브페이지
+      gsap.utils.toArray('.sub section').forEach(section => {
+        let aniEffects = section.querySelectorAll('.aniEffect');  // 해당 섹션 내의 .aniEffect 요소들 선택
+      
+        aniEffects.forEach(effect => {
+          gsap.fromTo(effect, 
+            {
+              opacity: 0,
+              y: 200
+            }, 
+            {
+              opacity: 1,
+              y: 0,
+              duration: 1,
+              ease: "power2.out",
+              scrollTrigger: {
+                trigger: section,  // 각 section을 트리거로 설정
+                start: "top 80%",  
+                end: "bottom 60%", 
+                scrub: true, 
+                scroller: '.lenis-wrap', 
+              }
+            }
+          );
+        });
+      });
+      
+      // 섹션 내부의 .gsap 요소들을 트리거
+      gsap.utils.toArray('.sub section').forEach(section => {
+        let gsapElements = section.querySelectorAll('.gsap');  // 해당 섹션 내의 .gsap 요소들 선택
+      
+        gsapElements.forEach(effect => {
+          gsap.fromTo(effect, 
+            {
+              y: 200
+            }, 
+            {
+              y: 0,
+              duration: 1,
+              ease: "power2.out",
+              scrollTrigger: {
+                trigger: section,  // 각 section을 트리거로 설정
+                start: "top 80%",  
+                end: "bottom 60%", 
+                scrub: true, 
+                scroller: '.lenis-wrap', 
+              }
+            }
+          );
+        });
       });
     },
   });

@@ -493,7 +493,6 @@ section .thumb-area > div > img.video {
 
   #main {
     height: auto;
-    border: 1px solid blue;
   }
   #main section {
     flex-direction: column;
@@ -580,5 +579,34 @@ section .thumb-area > div > img.video {
     display: none;
   }
 
+
+
+
+  .thumb-area>img.snsIcon {
+    bottom: 7vw;
+    left: 12.2vw;
+    width: 9.24vw;
+    height: 9.24vw;
+    margin-bottom: 2px;
+  }
+
+  .thumb-area>p {
+    top: 32.81vw;
+    right: 20.83vw;
+    font-size: 2.86vw;
+  }
+  .thumb-area>p.count {
+    opacity: 0;
+    right: 19.27vw;
+}
+.thumb-area>p.zero {
+  display: none;
+}
+section .thumb-area > div > img.ico-coin {
+  width: 18.75vw !important;
+  height: 13.8vw;
+  top: 38vw;
+  right: 2.6vw;
+}
 
 }

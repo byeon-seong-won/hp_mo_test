@@ -319,14 +319,16 @@ section:not(.sc-visual) .ser-inner {
         margin-top: 16.53vw;
     }
 
-
+    .every .sc-visual .btn-box a {
+        font-size: 3.38vw;
+    }
     .every .sc-visual .btn-box a:nth-child(1) {
-        width: 25.9vw;
-        height: 8.59vw;
+        width: 31vw;
+        height: 10.8vw;
     }
     .every .sc-visual .btn-box a:nth-child(2) {
-        width: 23.17vw;
-        height: 8.59vw;
+        width: 27.86vw;
+        height: 10.8vw;
     }
     .quiz .sc-visual .img-box img:nth-child(2) {
         width: 30.7vw;
@@ -342,9 +344,6 @@ section:not(.sc-visual) .ser-inner {
         height: 3.9vw;
     }
 
-    .btn-box a {
-        font-size: 2.6vw;
-    }
     .review .sc-visual .img-box img:nth-child(2) {
         width: 33.07vw;
     }
