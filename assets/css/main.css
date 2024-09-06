@@ -109,6 +109,16 @@ section .thumb-area > div > img.ico-coin {
 
 
 
+/* 리뷰클릭  */
+section.review .thumb-area .pc.pc-display {
+  display: inline-block;
+}
+section.review .col-right .mo.mo-display {
+  display: none;
+}
+
+
+
 
 /* 퀴즈클릭 gif */
 section .thumb-area > div > img.video {
@@ -269,13 +279,15 @@ section .thumb-area > div > img.video {
   width: 20px;
   height: 20px;
   position: absolute;
-  top: 250px;
-  right: 150px;
+  top: 130px;
+  right: 90px;
   opacity: 0;
   z-index: 0;
 }
-.thumb-area>img.money.money02 {top: 230px;right: 160px;}
-.thumb-area>img.money.money03 {top: 240px;right: 170px;}
+.thumb-area>img.money.money02 {top: 135px;
+  right: 100px;}
+.thumb-area>img.money.money03 {    top: 120px;
+  right: 110px;}
 .thumb-area>img.money.effect {
     -webkit-animation-name: rotateUp;
     animation: rotateUp;
@@ -657,8 +669,11 @@ section .thumb-area > div > img.ico-coin {
 
 
 
-  /* 리뷰클릭 */
 
+  /* 리뷰클릭  */
+  section.review .thumb-area .pc.pc-display {
+    display: none;
+  }
   section.review .col-right .mo.mo-display {
     display: inline-block;
   }

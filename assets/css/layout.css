@@ -93,6 +93,7 @@
 #header .display {
     display: none;
 }
+.toggle,
 #header .toggle_modal {
     display: none;
 }

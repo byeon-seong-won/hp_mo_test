@@ -199,7 +199,6 @@ section:not(.sc-visual) .ser-inner {
 
 .pc.pc-display {
     display: block;
-    border: 1px solid #000;
 }
 .mo.mo-display {
     display: none;
