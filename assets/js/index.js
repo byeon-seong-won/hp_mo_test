@@ -22,11 +22,13 @@
       $(this).toggleClass('active');
       $('.hamburger').toggleClass('is-active')
       $(".toggle_modal").fadeToggle();
-   });
-   $(".toggle_menu_list_modal a").click(function() {
-    $(this).parent('li').addClass('active')
-  })
-
+    });
+    $(".toggle_menu_list_modal a").click(function() {
+      $(this).parent('li').addClass('active')
+    })
+    $('.toggle_menu_list_modal .link-contact').click(function() {
+      $(this).addClass('active');
+    })
   
 
 
@@ -76,11 +78,11 @@
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    // speed: 1500,
-    // autoplay: {
-    //   delay: 7000,           
-    //   disableOnInteraction: false, 
-    // },
+    speed: 1500,
+    autoplay: {
+      delay: 7000,           
+      disableOnInteraction: false, 
+    },
     on: {
       slideChangeTransitionStart: function() {
           resetProgressBar();
@@ -400,8 +402,6 @@
 
   ScrollTrigger.matchMedia({
     "(max-width: 768px)": function() {
-
-
       // sc-comp 텍스트
       let tl = gsap.timeline({
         scrollTrigger: {
@@ -522,7 +522,7 @@
           gsap.fromTo(effect, 
             {
               opacity: 0,
-              y: 200
+              y: 600
             }, 
             {
               opacity: 1,
@@ -548,7 +548,7 @@
         gsapElements.forEach(effect => {
           gsap.fromTo(effect, 
             {
-              y: 200
+              y: 600
             }, 
             {
               y: 0,

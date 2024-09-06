@@ -1387,6 +1387,7 @@ section.sc-attend .ser-inner {
     }
     .sc-visual .img-box img:nth-child(1) {
         width: 5.2vw;
+        margin-top: 1.95vw;
     }
     .every .sc-visual .img-box img:nth-child(2) {
         width: 31.5vw;
@@ -1604,18 +1605,19 @@ section.sc-attend .ser-inner {
 
     /* 제휴문의 */
     .sc-cont {
-        padding: 9.11vw 9.11vw 0;
+        padding: 3.9vw 3.9vw 0;
     }
     .sc-cont .map-area {
         display: flex;
         flex-direction: column-reverse;
     }
     .sc-cont .map-area p {
-        font-size: 2.86vw;
+        font-size: 3.125vw;
         line-height: 3.9vw;
         margin-top: 0;
         padding: 0;
         margin-bottom: 2.34vw;
+        width: 100%;
     }
     .sc-cont .map-area p:before {
         width: 5.33vw;
@@ -1623,7 +1625,7 @@ section.sc-attend .ser-inner {
         margin-right: 1.69vw;
     }
     .sc-cont .map {
-        height: 84.37vw;
+        height: 57.42vw;
     }
     .sc-title {
         margin-top: 13vw;
@@ -1642,6 +1644,8 @@ section.sc-attend .ser-inner {
         padding-left: 0;
         margin-top: 4.3vw;
         padding-bottom: 21.48vw;
+        display: flex;
+        flex-direction: column;
     }
     .sc-cont .customer-area a:nth-child(1):before,
     .sc-cont .customer-area a:nth-child(2):before, 
@@ -1652,13 +1656,13 @@ section.sc-attend .ser-inner {
         margin-right: 2.1vw;
     }
     .sc-cont .customer-area a {
-        font-size: 2.6vw;
+        font-size: 3.125vw;
     }
     .sc-cont a:not(:first-child) em:nth-child(1) {
-        width: 19.53vw;
+        width: 22vw;
     }
     .sc-cont .customer-area a:nth-child(2) {
-        margin-top: 3vw;
+        margin-top: 3.77vw;
     }
 
 

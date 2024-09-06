@@ -414,6 +414,7 @@ footer small {
         }
         .toggle_menu_list_modal > ul > li.active {
             background: #E8EDF5;
+            border: none;
         }
         
         .toggle_menu_list_modal .link-contact {
@@ -429,8 +430,12 @@ footer small {
             top: 73.04vw;
             right: 5.2vw;
             border-radius: 2.08vw;
+            transition: 0.3s;
         }
-
+        .toggle_menu_list_modal .link-contact.active {
+            background: #F16365;
+            color: #fff;
+        }
 
 
 
