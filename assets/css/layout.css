@@ -294,6 +294,55 @@ footer small {
         height: 2px;
         width: 4.68vw;
     } */
+
+
+
+
+    #header .inner {
+        position: relative;
+    }
+    .toggle {
+        position: absolute;
+        display: block;
+        cursor: pointer;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+      }
+      .toggle span {
+        display: block;
+        background: #5A5A6A;
+        width: 4.68vw;
+        height: 0.26vw;
+        transition: 0.25s margin 0.25s, 0.25s transform;
+      }
+      .toggle span:nth-child(1) {
+          margin-bottom: 1.17vw;
+      }
+      .toggle span:nth-child(3) {
+          margin-top: 1.17vw;
+      }
+      .toggle.active span {
+          transition: 0.25s margin, 0.25s transform 0.25s;
+      }
+      .toggle.active span:nth-child(1) {
+        margin-top: 0.52vw;
+        margin-bottom: -0.26vw;
+          transform: rotate(45deg);
+      }
+      .toggle.active span:nth-child(2) {
+          transform: rotate(45deg);
+      }
+      .toggle.active span:nth-child(3) {
+        margin-top: -0.26vw;
+          transform: rotate(135deg);
+      }
+
+
+
+
+
+
     .modal-body {
         position: absolute;
         top: 50%;

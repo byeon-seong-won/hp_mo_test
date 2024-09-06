@@ -18,17 +18,16 @@
       ease:"none"
     })
 
-
-
-
-    $(".hamburger").click(function() {
+    $('.toggle').click(function(){
+      $(this).toggleClass('active');
       $('.hamburger').toggleClass('is-active')
       $(".toggle_modal").fadeToggle();
-    })
-    $(".toggle_menu_list_modal a").click(function() {
-      $(this).parent('li').addClass('active')
-    })
+   });
+   $(".toggle_menu_list_modal a").click(function() {
+    $(this).parent('li').addClass('active')
+  })
 
+  
 
 
 
@@ -407,7 +406,7 @@
       let tl = gsap.timeline({
         scrollTrigger: {
           trigger: '.sc-ident .inner',  // 공통 트리거 설정
-          start: "top 50%",  
+          start: "bottom 90%",  
           end: "top 0%", 
           scrub: true, 
           scroller: '.lenis-wrap',
