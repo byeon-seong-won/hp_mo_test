@@ -25,7 +25,9 @@
       $('.hamburger').toggleClass('is-active')
       $(".toggle_modal").fadeToggle();
     })
-
+    $(".toggle_menu_list_modal a").click(function() {
+      $(this).parent('li').addClass('active')
+    })
 
 
 

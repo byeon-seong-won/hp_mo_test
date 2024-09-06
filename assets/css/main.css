@@ -504,9 +504,20 @@ section .thumb-area > div > img.video {
   }
   #main section .col-right {
     margin-top: 3.78vw;
+    margin-bottom: -2vw;
   }
   section .thumb-area > div > img {
     width: 78vw;
+  }
+  section .thumb-area .detail {
+    width: 82.24vw;
+    position: absolute;
+    top: 53%;
+    right: 0;
+    margin-right: 0;
+  }
+  section.every .thumb-area > div {
+    display: block;
   }
   section .info-area h2 {
     font-size: 7.55vw;
@@ -548,10 +559,12 @@ section .thumb-area > div > img.video {
     margin-top: 7.16vw;
     font-size: 4.1vw;
     padding: 1.43vw 1.43vw 1.43vw 5.4vw;
+    line-height: 7.29vw;
   }
   .button-area a::after {
     width: 8.46vw;
     height: 8.46vw;
+    margin-left: 4.55vw;
   }
   .progress-bar {
     top: 13vw;
@@ -615,8 +628,8 @@ section .thumb-area > div > img.video {
 section .thumb-area > div > img.ico-coin {
   width: 18.75vw !important;
   height: 13.8vw;
-  top: 38vw;
-  right: 2.6vw;
+  top: 48vw;
+  right: 5vw;
 }
 
 }

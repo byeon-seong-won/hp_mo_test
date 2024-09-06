@@ -360,7 +360,7 @@ footer small {
             font-size: 3.9vw;
             color: #424242;
         }
-        .toggle_menu_list_modal > ul > li+li {
+        .toggle_menu_list_modal > ul > li {
             border-bottom: 1px solid #F1F1F1;
         }
         .toggle_menu_list_modal > ul > li.active {

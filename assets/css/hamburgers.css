@@ -19,33 +19,36 @@
   margin: 0;
   width: 4.68vw;
   overflow: visible; 
+  height: calc(0.26vw + 0.26vw + 0.26vw + 3.51vw);
+  border: 1px solid red;
 }
   .hamburger:hover {
-    opacity: 1; }
+    opacity: 1; 
+  }
   .hamburger.is-active:hover {
-    opacity: 1; }
+    opacity: 1; 
+  }
   .hamburger.is-active .hamburger-inner,
   .hamburger.is-active .hamburger-inner::before,
   .hamburger.is-active .hamburger-inner::after {
     background-color: #5A5A6A; }
 
 .hamburger-box {
-  height: calc(6px + 1.17vw + 1.17vw);
   display: inline-block;
   position: relative;
   width: 100%;
-  border: 1px solid red;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
 .hamburger-inner {
   display: block;
-  top: 50%;
 }
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     width: 4.68vw;
-    height: 2px;
+    height: 0.26vw;
     background-color: #5A5A6A;
-    border-radius: 4px;
     position: absolute;
     transition-property: transform;
     transition-duration: 0.15s;
@@ -63,7 +66,7 @@
 
 /*
    * Collapse */
-/* .hamburger--collapse .hamburger-inner {
+.hamburger--collapse .hamburger-inner {
   top: auto;
   bottom: 0;
   transition-duration: 0.13s;
@@ -89,7 +92,7 @@
     transform: rotate(-90deg);
     transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1); }
 
-/* */
+/*
    * Collapse Reverse
    */
 .hamburger--collapse-r .hamburger-inner {
