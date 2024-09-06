@@ -490,6 +490,14 @@ section .thumb-area > div > img.video {
     flex-direction: column;
     padding: 0;
   }
+  #main section.quiz > div,
+  #main section.review > div {
+    width: 100%;
+  }
+  #main section.quiz .thumb-area,
+  #main section.review .thumb-area  {
+    text-align: center;
+  }
   section .info-area .logo-box {
     gap: 1.9vw;
   }
@@ -510,11 +518,11 @@ section .thumb-area > div > img.video {
     width: 78vw;
   }
   section .thumb-area .detail {
-    width: 82.24vw;
+    width: 100pc;
     position: absolute;
-    top: 53%;
-    right: 0;
-    margin-right: 0;
+    top: 49%;
+    left: 50%;
+    transform: translateX(-50%);
   }
   section.every .thumb-area > div {
     display: block;
@@ -629,7 +637,7 @@ section .thumb-area > div > img.ico-coin {
   width: 18.75vw !important;
   height: 13.8vw;
   top: 48vw;
-  right: 5vw;
+  right: -2.6vw;
 }
 
 
@@ -640,11 +648,21 @@ section .thumb-area > div > img.ico-coin {
   section .thumb-area > div > img.video {
     top: 6.51vw;
     width: 58.98vw;
-    height: 101.3vw;
+    height: auto;
   }
   section .thumb-area > div > img.frame {
     width: 78vw;
   }
+
+
+
+
+  /* 리뷰클릭 */
+
+  section.review .col-right .mo.mo-display {
+    display: inline-block;
+  }
+
 
 
 
