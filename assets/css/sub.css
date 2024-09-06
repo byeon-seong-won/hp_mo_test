@@ -40,7 +40,10 @@
     height: 135px;
     z-index: 1;
 }
-
+.sc-ident  .inner {
+    position: relative;
+    z-index: 100;
+}
 .sc-ident .title-box {
     text-align: center;
     margin-top: 310px;
@@ -831,7 +834,7 @@ section.sc-attend .ser-inner {
 }
 .quiz .sc-cont04 .thumb-area > div img {
     width:1060px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .quiz .sc-cont04 .thumb-area .col-right {
     z-index: 10;
@@ -1167,38 +1170,27 @@ section.sc-attend .ser-inner {
 
 /* 반응형 */
 
-/* 큰 PC : 1201px ~ 1300px */
-@media (max-width:1300px) {
-    /* section:not(.sc-visual) .ser-inner {
-        padding: 70px 100px;
-        transform: scale(0.9);
-    } */
-    /* .sc-daily .col-right {
-        text-align: right;
-    }
-    section.sc-attend .ser-inner {
-        padding : 96px 158px 0 83px;
-    }
-    .every .thumb-area>img.hand {
-        position: absolute;
-        bottom: 23px;
-        left: -140px;
-    }
-    .sc-attend .col-right {
-        margin-left: 132px;
-    } */
+/* 작은 pc */
+@media (min-width:769px) and (max-width:1679px) {
+
 
 
     /* 자몽랩 */
     .sc-mission .inner {
-        padding: 123px 0 123px 0;
-    } 
+        padding: 123px 2.3vw 123px 7.69vw;
+    }
     .sc-vision .inner {
         padding: 131px 0 130px 0;
     } 
-
-
-
+    .sc-mission .title, .sc-vision .title {
+        font-size: 3.46vw;
+        line-height: 4.61vw;
+    }
+    .sc-mission .subTit, .sc-vision .subTit {
+        margin-top: 1.53vw;
+        font-size: 1.69vw;
+        line-height: 2.3vw;
+    }
     .title br {
         display: none;
     }
@@ -1229,40 +1221,32 @@ section.sc-attend .ser-inner {
         padding: 90px 0 100px 0;
     }
 
-        /* 에브리클릭 */
-        .every .sc-daily .ser-inner {
-            padding: 100px 70px;
-        }
-        .every .sc-attend .ser-inner {
-            padding: 100px 70px 0;
-        }
-        .every .thumb-area>img.hand {
-            position: absolute;
-            bottom: 5px;
-            left: -150px;
-            width: 70%;
-        }
+    /* 에브리클릭 */
+    .every .sc-daily .ser-inner {
+        padding: 8vw 4.76vw 9.76vw 5.38vw;
+    }
+    .sc-daily .col-right .thumb-area > img {
+        height: 47.15vw;
+    }
+    .every .sc-attend .ser-inner {
+        padding: 100px 70px 0;
+    }
+    .every .thumb-area>img.hand {
+        position: absolute;
+        bottom: 5px;
+        left: -150px;
+        width: 70%;
+    }
 
+
+    /* 퀴즈클릭 */
 
 
 }
+   
 
-
-
-@media (max-width:1200px) {
-
-}
-
-
-@media (max-width:1024px) {
-
-}
 
 @media (max-width:768px) {
-
-
-
-
 
     /* 자몽랩 소개 */
     .comp .sc-comp {
@@ -1282,7 +1266,7 @@ section.sc-attend .ser-inner {
         text-align: center;
     }
     .sc-ident::after {
-        height: 48vw;
+        height: 100vw;
     }
     .sc-ident .headline {
         margin-left: 0;
@@ -1548,8 +1532,6 @@ section.sc-attend .ser-inner {
 
 
     /* 리뷰클릭 */
-
-
     .review .sc-cont01 .ser-inner {
         padding: 15.2vw 0 25.1vw 0;
         text-align: center;
@@ -1608,6 +1590,7 @@ section.sc-attend .ser-inner {
         display: inline-block;
         margin-bottom: 0;
         height: 78.12vw;
+        margin-left: -13vw;
     }
     .review .sc-cont03 .ser-inner .col-right {
         margin-top: 4.16vw;

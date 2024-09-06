@@ -428,12 +428,13 @@ section .thumb-area > div > img.video {
 
 
 /* 반응형 */
-@media (min-width:769px) and (max-width:1300px) {
-  #main section > div {
-    /* transform: scale(0.9); */
-  }
+
+/* 작은 pc */
+@media (min-width:769px) and (max-width:1679px) {
+
   #main section {
     padding: 0 6.46vw 0 9.69vw;
+    border: 2px solid red;
   }
   section .info-area h2 {
     margin-top: 2.69vw;

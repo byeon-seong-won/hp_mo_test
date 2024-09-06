@@ -219,52 +219,24 @@ section:not(.sc-visual) .ser-inner {
 
 
 /* 반응형 */
-@media (max-width:1500px) {
-
- 
-
-}
+/* 작은 pc */
+@media (min-width:769px) and (max-width:1679px) {
 
 
-@media (max-width:1300px) {
-/* 
-    .comp section > div {
-        transform: scale(0.9);
+    .headline {
+        font-size: 2vw;
+        margin-bottom: 2.15vw;
     }
-*/
-
-    /* 자몽랩 */
-    /* .sub.comp section > div {
-        max-width: 1200px;
-        transform: scale(0.9);
-    } */
-    .sc-ident .title-box {
-        margin-top: 210px;
+    .title {
+        font-size: 3.07vw;
+        line-height: 3.84vw;
     }
-    .sc-mission .inner {
-        padding: 123px 0;
-    }
-    .sub.every section > div,
-    .sub.quiz section > div,
-    .sub.review section > div {
-        max-width: 1200px;
-    }
-
 
 
 
 }
 
 
-
-@media (max-width:1200px) {
-
-}
-
-
-@media (max-width:1024px) {
-
-}
 
 @media (max-width:768px) {
 

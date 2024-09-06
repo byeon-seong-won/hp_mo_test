@@ -25,6 +25,11 @@
       $('.hamburger').toggleClass('is-active')
       $(".toggle_modal").fadeToggle();
     })
+
+    $(".hamburger").click(function() {
+      $('.hamburger').toggleClass('is-active')
+      $(".toggle_modal").fadeToggle();
+    })
  
   
 
@@ -295,8 +300,6 @@
         );
       });
 
-
-
       gsap.from(".sc-mission .aniEffect-left", {
         scrollTrigger: {
           trigger: ".sc-mission .aniEffect-left", 
@@ -408,7 +411,7 @@
         scrollTrigger: {
           trigger: '.sc-ident .inner',  // 공통 트리거 설정
           start: "top 50%",  
-          end: "top 20%", 
+          end: "top 0%", 
           scrub: true, 
           scroller: '.lenis-wrap',
         }
@@ -425,7 +428,7 @@
             opacity: 1,
             y: 0,
             duration: 1,
-            ease: "power2.out"
+            ease: "power2.out",
           },'mainTxt'
         );
       });
@@ -450,7 +453,7 @@
         scrollTrigger: {
           trigger: ".sc-mission", 
           start: "10% 80%",       
-          end: "top 50%",         
+          end: "top 20%",         
           scrub: true,
           scroller: '.lenis-wrap', 
         },
@@ -470,8 +473,8 @@
           ease: "power2.out",
           scrollTrigger: {
             trigger: ".sc-mission", 
-            start: "10% 70%",       
-            end: "top 10%",    
+            start: "10% 80%",       
+            end: "top 20%",      
             scrub: true,
             scroller: '.lenis-wrap', 
           }
@@ -505,6 +508,7 @@
           end: "top 10%",         
           scrub: true,
           scroller: '.lenis-wrap', 
+
         },
         x: 50,                 
         opacity: 0,    
