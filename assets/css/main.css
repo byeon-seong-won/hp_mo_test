@@ -606,7 +606,7 @@ section .thumb-area > div > img.video {
 
 
   .thumb-area>img.snsIcon {
-    bottom: 7vw;
+    bottom: 5.5vw;
     left: 12.2vw;
     width: 9.24vw;
     height: 9.24vw;
@@ -631,5 +631,21 @@ section .thumb-area > div > img.ico-coin {
   top: 48vw;
   right: 5vw;
 }
+
+
+
+
+
+  /* 퀴즈클릭 */
+  section .thumb-area > div > img.video {
+    top: 6.51vw;
+    width: 58.98vw;
+    height: 101.3vw;
+  }
+  section .thumb-area > div > img.frame {
+    width: 78vw;
+  }
+
+
 
 }
