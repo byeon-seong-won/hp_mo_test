@@ -433,8 +433,11 @@ section .thumb-area > div > img.video {
 
 
 
-
-
+@media (min-width:1301px) and (max-width : 1680px) {
+  #main section {
+    padding: 8.7vh 88px 0 126px;
+  }
+}
 
 
 
@@ -442,11 +445,11 @@ section .thumb-area > div > img.video {
 /* 반응형 */
 
 /* 작은 pc */
-@media (min-width:769px) and (max-width:1679px) {
+@media (min-width:769px) and (max-width:1300px) {
 
+  
   #main section {
-    padding: 0 6.46vw 0 9.69vw;
-    border: 2px solid red;
+    padding: 16vh 6.46vw 8.7vh 9.69vw;
   }
   section .info-area h2 {
     margin-top: 2.69vw;
@@ -457,6 +460,7 @@ section .thumb-area > div > img.video {
     margin-top: 2.23vw;
     font-size: 1.69vw;
     line-height: 2.46vw;
+    letter-spacing: unset;
   } 
   section .info-area .logo-box img:nth-child(1) {
     width: 2.3vw;
@@ -468,9 +472,11 @@ section .thumb-area > div > img.video {
     width: 26.15vw;
   }
   .button-area a {
-    margin-top: 6.61vw;
+    margin-top: 6.53vw;
     font-size: 1.69vw;
     line-height: 3.07vw;
+    border-radius: 1.23vw;
+    padding: 0.61vw 0.61vw 0.61vw 2.3vw;
   }
   .button-area a::after {
     margin-left: 1.91vw;
@@ -484,6 +490,32 @@ section .thumb-area > div > img.video {
   }
 
 
+  /* 에브리클릭 */
+  .thumb-area>img.hand {
+    position: absolute;
+    bottom: 2.6vw;
+    right: 13vw;
+    z-index: 3;
+    width: 26vw;
+  }
+  .thumb-area>img.snsIcon {
+    position: absolute;
+    bottom: 17.2vw;
+    right: 18.46vw;
+    width: 3.3vw;
+    height: 3.3vw;
+    z-index: 2;
+    margin-bottom: 2px;
+}
+
+
+  /* 퀴즈클릭 */
+  section .thumb-area > div > img.video {
+    top: -0.76vw;
+    width: 23vw;
+    height: 49vw;
+    border-radius: 0;
+  }
 
 
 

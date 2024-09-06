@@ -1073,18 +1073,21 @@ section.sc-attend .ser-inner {
 .sc-cont {
     padding: 69px 80px 0;
 }
+
 .sc-cont .map {
     border-radius: 30px;
     margin: 0 auto;
     overflow: hidden;
     width: 100%;
-    max-width: 1140px;
     height: 671px;
 }
 .sc-cont .map iframe {
     display: block;
     width: 100%;
     height: 100%;
+}
+.sc-cont .map-area {
+    max-width: 1140px;
 }
 .sc-cont .map-area p {
     margin-top: 31px;
@@ -1094,7 +1097,6 @@ section.sc-attend .ser-inner {
     color: #323232;
     display: flex;
     align-items: center;
-    padding: 0 180px;
 }
 .sc-cont .map-area p:before {
     content: '';
@@ -1115,45 +1117,56 @@ section.sc-attend .ser-inner {
 .sc-cont .map-area em {
     margin-right: 10px;
 }
-.sc-cont .customer-area {
-    text-align-last: left;
+.txt-area {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.sc-cont .customer-box {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
     margin-top: 95px;
-    padding-left: 800px;
     padding-bottom: 88px;
 }
-.sc-cont .customer-area a {
+.sc-cont .customer-box a {
     font-size: 22px;
     font-weight: 400;
     display: inline-flex;
     align-items: center;
     color: #323232;
 }
-.sc-cont .customer-area a::before {
+.sc-cont .customer-box a::before {
     content: '';
     display: inline-block;
     margin-right: 14px;
 }
-.sc-cont .customer-area a:nth-child(1):before {
+.sc-cont .customer-box a:nth-child(1):before {
     width: 30px;
     height: 30px;
     background: url(../img/ico-cont-tel.png) no-repeat center / 100%;
 }
-.sc-cont .customer-area a:nth-child(2) {
+.sc-cont .customer-box a:nth-child(2) {
     margin-top: 42px;
 }
-.sc-cont .customer-area a:nth-child(2):before {
+.sc-cont .customer-box a:nth-child(2):before {
     width: 30px;
     height: 30px;
     background: url(../img/ico-cont-email.png) no-repeat center / 100%;
 }
-.sc-cont .customer-area a:nth-child(3):before,
-.sc-cont .customer-area a:nth-child(4):before {
+.sc-cont .customer-box a:nth-child(3):before,
+.sc-cont .customer-box a:nth-child(4):before {
     width: 30px;
     height: 30px;
     background: url(../img/ico-cont-email.png) no-repeat center / 100%;
     opacity: 0;
 }
 
+.sc-cont .customer-box.mo {
+    display: none;
+}
 
 
 
@@ -1171,17 +1184,49 @@ section.sc-attend .ser-inner {
 /* 반응형 */
 
 /* 작은 pc */
-@media (min-width:769px) and (max-width:1679px) {
-
+@media (min-width:769px) and (max-width:1300px) {
 
 
     /* 자몽랩 */
+    .comp .sc-comp {
+        margin-top: 17.92vw;
+    }
+    .comp .sc-comp p {
+        font-size: 3.84vw;
+        line-height: 5.07vw;
+    }
+    .sc-ident {
+        margin-top: 13.23vw;
+        padding-bottom: 21.53vw;
+    }
+    .sc-ident .headline {
+        margin-left: 7.69vw;
+    }
+    .sc-ident .title-box h3 {
+        font-size: 3.46vw;
+    }
+    .sc-ident .title-desc {
+        margin-top: 3.53vw;
+        gap: 7.23vw;
+    }
+    .sc-ident .desc p {
+        margin-top: 9.15vw;
+        font-size: 2.61vw;
+    }
+    .sc-ident .desc span {
+        margin-top: 2.23vw;
+        font-size: 1.76vw;
+        line-height: 2.76vw;
+    }
     .sc-mission .inner {
-        padding: 123px 2.3vw 123px 7.69vw;
+        padding: 9.46vw 2.3vw 9.46vw 7.69vw;
     }
     .sc-vision .inner {
-        padding: 131px 0 130px 0;
-    } 
+        padding: 10vw 3.53vw 10vw 3.53vw;
+    }
+    .sc-vision .inner .col-right {
+        margin-left: 5.76vw;
+    }
     .sc-mission .title, .sc-vision .title {
         font-size: 3.46vw;
         line-height: 4.61vw;
@@ -1197,12 +1242,14 @@ section.sc-attend .ser-inner {
     .sc-vision .subTit br {
         display: none;
     }
-
+    .sc-mission .headline, .sc-vision .headline {
+        margin-bottom: 1.07vw;
+    }
 
 
 
     .quiz .sc-cont01 .ser-inner {
-        padding: 254px 0 224px 0;
+        padding: 19.53vw 0 19.53vw 5.38vw;
     }
     .quiz .sc-cont02 .ser-inner,
     .quiz .sc-cont03 .ser-inner {
@@ -1212,13 +1259,14 @@ section.sc-attend .ser-inner {
         padding-right: 0;
     }
     .review .sc-cont01 .ser-inner {
-        padding: 77px 0 80px 0;
+        padding: 5.92vw 0 6.15vw 5.38vw;
+        overflow: hidden;
     }
     .review .sc-cont02 .ser-inner {
-        padding: 96px 216px 83px 178px;
+        padding: 5vw 11.25vw 4.32vw 1.875vw;
     }
     .review .sc-cont03 .ser-inner {
-        padding: 90px 0 100px 0;
+        padding: 6.92vw 0 7.69vw 5.38vw;
     }
 
     /* 에브리클릭 */
@@ -1229,17 +1277,113 @@ section.sc-attend .ser-inner {
         height: 47.15vw;
     }
     .every .sc-attend .ser-inner {
-        padding: 100px 70px 0;
+        padding: 7.69vw 5.38vw 0;
     }
     .every .thumb-area>img.hand {
-        position: absolute;
-        bottom: 5px;
-        left: -150px;
+        display: none;
+    }
+    .sc-daily .snsSlide {
+        margin-top: 3.76vw;
         width: 70%;
     }
+    .sc-attend .thumb-area > div img {
+        height: 52.3vw;
+    }
+    .every .sc-cash .ser-inner {
+        padding-top: 7.38vw;
+        padding-left: 5.38vw;
+        padding-right: 5.38vw;
+        padding-bottom: 6.38vw;
+    }
+    .sc-cash .link-home {
+        width: 16.76vw;
+        height: 5.07vw;
+        border-radius: 4.53vw;
+        font-size: 1.53vw;
+        bottom: 2.38vw;
+    }
+    .sc-cash .thumb-area > div >img {
+        height: 48.46vw;
+    }
+
+
 
 
     /* 퀴즈클릭 */
+    .quiz .sc-visual .img-box img:nth-child(2) {
+        width: 17.15vw;
+    }
+    .quiz .sc-cont01 .col-right .thumb-area img {
+        width: 61.53vw;
+    }
+    .quiz .sc-cont02 .ser-inner {
+        padding-top: 11.69vw;
+        padding-bottom: 11.69vw;
+        padding-left: 11vw;
+    }
+    .quiz .sc-cont03 .thumb-area img {
+        width: 48.46vw;
+    }
+    .quiz .sc-cont03 .ser-inner {
+        padding: 13.46vw 5.38vw;
+    }
+    .quiz .sc-cont03 .ser-inner > .col-right {
+        height: auto;
+    }
+    .quiz .sc-cont04 .col-left::before {
+        content: none;
+    }
+    .quiz .sc-cont04 .ser-inner {
+        padding: 10vw 5.38vw 0 0;
+    }
+    .quiz .sc-cont04 .thumb-area > div img {
+        width: 81.53vw;
+        margin-bottom: 1.53vw;
+    }
+
+
+    /* 리뷰클릭 */
+    .review .sc-visual .img-box img:nth-child(2) {
+        width: 17.69vw;
+    }
+    .review .sc-cont02 .thumb-area .review-02 {
+        height: 47.69vw;
+    }
+    .review .sc-cont03 .thumb-area .review-03 {
+        height: 47.69vw;
+        margin-bottom: -0.76vw;
+    }
+    .review .sc-cont01 .thumb-area::before {
+        margin-right: -10vw;
+        width: 22.38vw;
+    }
+    .review .sc-cont01 .thumb-area::after {
+        margin-left: -7.69vw;
+        width: 11.53vw;
+    }
+
+
+
+    /* 제휴문의 */
+    .sc-title .headline {
+        font-size: 2.46vw;
+        line-height: 2.76vw;
+        margin-top: 1.84vw;
+    }
+    .sc-title {
+        margin-top: 8.69vh;
+        padding: 6.53vw 0;
+    }
+    .sc-title img {
+        width: 3.53vw;
+    }
+    .sc-cont {
+        padding: 5.3vw 6.15vw 0;
+    }
+    .sc-cont .map {
+        border-radius: 2.3vw;
+        height: 51.61vw;
+    }
 
 
 }
@@ -1640,29 +1784,36 @@ section.sc-attend .ser-inner {
     .sc-title img {
         width: 5.98vw;
     }
-    .sc-cont .customer-area {
+    .sc-cont .customer-box {
         padding-left: 0;
         margin-top: 4.3vw;
         padding-bottom: 21.48vw;
         display: flex;
         flex-direction: column;
     }
-    .sc-cont .customer-area a:nth-child(1):before,
-    .sc-cont .customer-area a:nth-child(2):before, 
-    .sc-cont .customer-area a:nth-child(3):before, 
-    .sc-cont .customer-area a:nth-child(4):before {
+    .sc-cont .customer-box a:nth-child(1):before,
+    .sc-cont .customer-box a:nth-child(2):before, 
+    .sc-cont .customer-box a:nth-child(3):before, 
+    .sc-cont .customer-box a:nth-child(4):before {
         width: 4.3vw;
         height: 4.3vw;
         margin-right: 2.1vw;
     }
-    .sc-cont .customer-area a {
+    .sc-cont .customer-box a {
         font-size: 3.125vw;
     }
     .sc-cont a:not(:first-child) em:nth-child(1) {
         width: 22vw;
     }
-    .sc-cont .customer-area a:nth-child(2) {
+    .sc-cont .customer-box a:nth-child(2) {
         margin-top: 3.77vw;
+    }
+
+    .sc-cont .customer-box.mo {
+        display: block;
+    }
+    .sc-cont .customer-box.pc {
+        display: none;
     }
 
 

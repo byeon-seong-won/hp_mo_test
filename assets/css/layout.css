@@ -174,8 +174,7 @@ footer .col-left address {
 
 
 
-
-.dw-list {
+.dw-list.pc {
     display: flex;
     align-items: center;
     justify-content: end;
@@ -234,24 +233,86 @@ footer .col-right .customer-area .time {
 footer .col-right .customer-area .time:last-child {
     color: #AFB1B4;
 }
-
 footer small {
     display: block;
     margin-top: 13px;
-    color: #AFB1B4;
     font-size: 14px;
-    font-weight: 400;
-}       
+    color: #AFB1B4;
+}
 
 
 
 
 
 
+/* 작은 pc */
+@media (min-width:769px) and (max-width:1300px) {
+    /* #header {
+        height: 8.69vh;
+        max-height: 113px;
+    } */
+    #header .logo-area img {
+        width: 14.3vw;
+    }
+    #header .gnb-box ul {
+        gap: 3.84vw;
+    }
+    #header .gnb-box ul li a {
+        font-size: 1.46vw;
+    }
+    #header .link-area a {
+        width: 7.84vw;
+        height: 3.84vw;
+        border-radius: 1.07vw;
+        font-size: 1.46vw;
+    }
+
+    footer .col-left .logo-area img {
+        width: 13vw;
+    }
+    footer .col-left .logo-area span {
+        font-size: 1.38vw;
+        margin-top: 0.92vw;
+    }
+    footer .inner {
+        padding: 3.23vw 5vw 2vw 4.92vw;
+    }
+    footer .col-left .util-area {
+        margin-top: 3.23vw;
+        font-size: 1.23vw;
+        gap: 0.76vw;
+    }
+    footer .col-left address {
+        margin-top: 0.76vw;
+        font-size: 1.15vw;
+    }
+    footer small {
+        margin-top: 1vw;
+        font-size: 1.07vw;
+    }
+    footer .col-right .customer-area .tel {
+        font-size: 1.46vw;
+        line-height: 2.23vw;
+    }
+    footer .col-right .customer-area .tel:before {
+        width: 1.3vw;
+        height: 1.3vw;
+        margin-right: 0.53vw;
+    }
+    footer .col-right .customer-area a {
+        margin-top: 0.38vw;
+        margin-bottom: 1.07vw;
+        font-size: 2.3vw;
+        line-height: 2.07vw;
+    }
+    footer .col-right .customer-area .time {
+        font-size: 1.23vw;
+        line-height: 1.69vw;
+        font-weight: 400;
+    }
 
 
-
-
+}
 
 
 
@@ -497,6 +558,9 @@ footer small {
 
       footer .logo-area {
         position: relative;
+      }
+      .dw-list.pc {
+        display: none;
       }
       .dw-list.mo.mo-display {
         display: flex;
