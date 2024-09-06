@@ -26,12 +26,7 @@
       $(".toggle_modal").fadeToggle();
     })
 
-    $(".hamburger").click(function() {
-      $('.hamburger').toggleClass('is-active')
-      $(".toggle_modal").fadeToggle();
-    })
- 
-  
+
 
 
 
@@ -508,7 +503,6 @@
           end: "top 10%",         
           scrub: true,
           scroller: '.lenis-wrap', 
-
         },
         x: 50,                 
         opacity: 0,    

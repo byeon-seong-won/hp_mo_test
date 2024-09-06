@@ -269,13 +269,13 @@ section .thumb-area > div > img.video {
   width: 20px;
   height: 20px;
   position: absolute;
-  top: 130px;
-  right: 90px;
+  top: 250px;
+  right: 150px;
   opacity: 0;
   z-index: 0;
 }
-.thumb-area>img.money.money02 {top: 135px;right: 100px;}
-.thumb-area>img.money.money03 {top: 120px;right: 110px;}
+.thumb-area>img.money.money02 {top: 230px;right: 160px;}
+.thumb-area>img.money.money03 {top: 240px;right: 170px;}
 .thumb-area>img.money.effect {
     -webkit-animation-name: rotateUp;
     animation: rotateUp;
@@ -470,23 +470,14 @@ section .thumb-area > div > img.video {
     width: 13px !important;
     height: 13px !important;
   }
-}
 
-
-@media (max-width:1200px) {
-
-}
-
-
-@media (max-width:1024px) {
-
-}
 
 
 
 
 
 
+}
 
 
 
@@ -567,6 +558,23 @@ section .thumb-area > div > img.video {
     height: 0.39vw;
     position: fixed;
   }
+  .thumb-area>img.money {
+    width: 2.6vw;
+    height: 2.6vw;
+    top: 32.55vw;
+    right: 19.53vw;
+  }
+  .thumb-area>img.money.money02 {top: 29.94vw;right: 20.83vw;}
+  .thumb-area>img.money.money03 {top: 31.25vw;right: 22.13vw;}
+
+
+
+
+
+
+
+
+
 
 
 
