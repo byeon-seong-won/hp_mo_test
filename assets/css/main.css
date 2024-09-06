@@ -544,6 +544,7 @@ section .thumb-area > div > img.video {
     text-align: center;
   }
   .button-area a {
+    border-radius: 2.86vw;
     margin-top: 7.16vw;
     font-size: 4.1vw;
     padding: 1.43vw 1.43vw 1.43vw 5.4vw;
