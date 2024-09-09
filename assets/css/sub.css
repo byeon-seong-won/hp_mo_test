@@ -1619,10 +1619,11 @@ section.sc-attend .ser-inner {
     .sc-cash .link-home {
         width: 33.9vw;
         height: 9.76vw;
-        font-size: 3.64vw;
+        font-size: 3.38vw;
         bottom: 26vw;
         box-shadow: 0px 0px 10px 0px #72D4CD;
         border-radius: 7.55vw;
+        font-weight: 500;
     }
 
 

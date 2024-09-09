@@ -18,6 +18,10 @@
       ease:"none"
     })
 
+
+
+
+
     $('.toggle').click(function(){
       $(this).toggleClass('active');
       $('.hamburger').toggleClass('is-active')
@@ -29,7 +33,13 @@
     $('.toggle_menu_list_modal .link-contact').click(function() {
       $(this).addClass('active');
     })
-  
+
+    $(window).resize(function() {
+      $('.toggle').removeClass('active');
+      $('.toggle_modal').fadeOut();
+    });
+
+
 
 
 

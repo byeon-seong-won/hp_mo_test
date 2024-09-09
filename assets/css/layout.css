@@ -122,7 +122,7 @@
 
 /* footer */
 footer {
-    z-index: 100;
+    z-index: 10;
     position: relative;
     background: #F5F7FA;
 }
@@ -462,13 +462,13 @@ footer small {
         justify-content: start;
         align-items: center;
         text-align: left;
-        height: 13vw;
+        height: 16.4vw;
         }
         .toggle_menu_list_modal > ul > li a {
             display: block;
             width: 100%;
-            padding: 0 8.72vw;
-            font-size: 3.9vw;
+            padding: 0 6.51vw;
+            font-size: clamp(16px, 3.9vw, 100%);
             color: #424242;
         }
         .toggle_menu_list_modal > ul > li {
@@ -486,13 +486,14 @@ footer small {
             align-items: center;
             background: #E8EDF5;
             color: #2D2D2D;
-            font-size: 3.9vw;
-            width: 20.3vw;
-            height: 10.41vw;
-            top: 73.04vw;
-            right: 5.2vw;
+            /* font-size: 3.9vw; */
+            width: 22.39vw;
+            height: 12.5vw;
+            top: 77.6vw;
+            right: 6.51vw;
             border-radius: 2.08vw;
             transition: 0.3s;
+            font-size: clamp(16px, 3.9vw, 100%);
         }
         .toggle_menu_list_modal .link-contact.active {
             background: #F16365;
@@ -534,7 +535,7 @@ footer small {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 3.9vw;
+        font-size: clamp(16px, 3.9vw, 100%);
         line-height: 3.5vw;
         margin-top: 0;
         margin-bottom: 1.95vw;
@@ -552,8 +553,8 @@ footer small {
       }
 
       footer .col-right .customer-area .time {
-        font-size: 2.6vw;
-        line-height: 2.99vw;
+        font-size: clamp(16px, 3.9vw, 100%);
+        line-height: clamp(1, 2.99vw, 1.2);
       }
 
       footer .logo-area {
@@ -591,7 +592,7 @@ footer small {
     }
     footer .col-left .util-area {
         margin-top: 7.03vw;
-        font-size: 2.86vw;
+        font-size: clamp(16px,2.86vw,100%);
         gap: 1.56vw;
     }
     footer .col-left address {
