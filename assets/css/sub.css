@@ -568,7 +568,7 @@ section.sc-attend .ser-inner {
     transition: 0.5s;
 }
 .sc-cash .link-home:hover {
-    box-shadow: 0px 0px 25px 0px #72D4CD;
+    box-shadow: 0px 0px 15px 0px #72D4CD;
 }
 
 
@@ -1385,6 +1385,41 @@ section.sc-attend .ser-inner {
         border-radius: 2.3vw;
         height: 51.61vw;
     }
+    .sc-cont .map-area p {
+        margin-top: 2.38vw;
+        font-size: 1.84vw;
+        line-height: 2.76vw;
+    }
+    .sc-cont .map-area p:before {
+        width: 2.92vw;
+        height: 2.92vw;
+        margin-right: 1vw;
+    }
+    .sc-cont .map-area em {
+        margin-right: 0.76vw;
+    }
+    .sc-cont .customer-box {
+        margin-top: 7.3vw;
+        padding-bottom: 6.76vw;
+    }
+    .sc-cont .customer-box a {
+        font-size: 1.69vw;
+    }
+    .sc-cont .customer-box a:nth-child(1):before,
+    .sc-cont .customer-box a:nth-child(2):before,
+    .sc-cont .customer-box a:nth-child(3):before,
+    .sc-cont .customer-box a:nth-child(4):before {
+        width: 2.3vw;
+        height: 2.3vw;
+    }
+    .sc-cont .customer-box a:nth-child(2) {
+        margin-top: 3.23vw;
+    }
+    .sc-cont a:not(:first-child) em:nth-child(1) {
+        width: 13vw;
+    }
+
+
 
 
 }

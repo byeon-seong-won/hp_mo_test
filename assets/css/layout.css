@@ -122,7 +122,7 @@
 
 /* footer */
 footer {
-    z-index: 1;
+    z-index: 100;
     position: relative;
     background: #F5F7FA;
 }
