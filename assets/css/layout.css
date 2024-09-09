@@ -535,7 +535,7 @@ footer small {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: clamp(16px, 3.9vw, 100%);
+        font-size: clamp(18px, 3.9vw, 100%);
         line-height: 3.5vw;
         margin-top: 0;
         margin-bottom: 1.95vw;
@@ -592,18 +592,21 @@ footer small {
     }
     footer .col-left .util-area {
         margin-top: 7.03vw;
-        font-size: clamp(16px,2.86vw,100%);
+        font-size: clamp(16px, 2.86vw, 100%);
         gap: 1.56vw;
     }
     footer .col-left address {
         margin-top: 2.34vw;
-        font-size: 2.6vw;
+        /* font-size: 2.6vw; */
+        font-size: clamp(13px, 2.6vw, 100%);
         line-height: normal;
         letter-spacing: -0.01rem;
     }
+
     footer small {
         margin-top: 1.7vw;
-        font-size: 2.34vw;
+        /* font-size: 2.34vw; */
+        font-size: clamp(12px, 2.34vw, 100%);
         letter-spacing: -0.02rem;
     }
 
