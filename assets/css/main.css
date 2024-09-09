@@ -79,7 +79,7 @@ section .thumb-area .detail {
 }
 section .thumb-area > div > img.frame {
   position: absolute;
-  width: 320px;
+  width: 292px;
   z-index: 10;
   top: 50%;
   left: 50%;
@@ -121,16 +121,16 @@ section.review .col-right .mo.mo-display {
 
 
 /* 퀴즈클릭 gif */
-section .thumb-area > div > img.video {
-  display: none;
-  position: absolute;
-  top: 3px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 285px;
-  height: 610px;
-  z-index: 0;
-  border-radius: 20px;
+  section .thumb-area > div > img.video {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 257px;
+    height: 550px;
+    z-index: 0;
+    border-radius: 20px;
 }
 /* section .thumb-area > div > img.video.on {
   opacity: 1;
@@ -506,17 +506,64 @@ section .thumb-area > div > img.video {
     height: 3.3vw;
     z-index: 2;
     margin-bottom: 2px;
-}
+  }
+  .thumb-area>p {
+    top: 10.61vw;
+    right: 7.3vw;
+    font-size: 1.38vw;
+  }
+  .thumb-area>p.zero {
+    right: 7.3vw;
+  }
+  .thumb-area>p.count {
+    right: 6.53vw;
+  }
+  .thumb-area>img.money {
+    width: 1.53vw;
+    height: 1.53vw;
+    top: 10vw;
+    right: 6.92vw;
+  }
+  .thumb-area>img.money.money02 {
+    top: 10.38vw;
+    right: 7.69vw;
+  }
+  .thumb-area>img.money.money03 {
+      top: 9.23vw;
+      right: 8.46vw;
+  }
+
+
 
 
   /* 퀴즈클릭 */
+  section .thumb-area > div > img.frame {
+    width: 22.46vw;
+}
   section .thumb-area > div > img.video {
-    top: -0.76vw;
-    width: 23vw;
-    height: 49vw;
-    border-radius: 0;
-  }
+    display: none;
+    position: absolute;
+    top: 2.3vw;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 19.76vw;
+    height: 42.3vw;
+    z-index: 0;
+    border-radius: 20px;
+}
 
+
+section .thumb-area .detail {
+  width: 34.61vw;
+}
+
+
+section .thumb-area > div > img.ico-coin {
+  width: 6.76vw !important;
+  height: 5vw;
+  top: 17.69vw;
+  right: -1.53vw;
+}
 
 
 

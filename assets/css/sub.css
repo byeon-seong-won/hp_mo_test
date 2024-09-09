@@ -654,6 +654,7 @@ section.sc-attend .ser-inner {
     height: 100%;
     z-index: 10;
     transform: rotate(180deg);
+    margin-right: -100px;
 }
 
 .quiz .sc-cont01 .col-right .thumb-area img {
@@ -677,8 +678,7 @@ section.sc-attend .ser-inner {
     flex: 1;
 }
 .quiz .sc-cont02 .col-right {
-    /* margin-left: 140px; */
-    margin-left: 10%;
+    margin-left: 5%;
 }
 
 
@@ -1320,6 +1320,7 @@ section.sc-attend .ser-inner {
         padding-top: 11.69vw;
         padding-bottom: 11.69vw;
         padding-left: 11vw;
+        padding-right: 12.15vw;
     }
     .quiz .sc-cont03 .thumb-area img {
         width: 48.46vw;
@@ -1616,6 +1617,7 @@ section.sc-attend .ser-inner {
     }
     .quiz .sc-cont01 .col-right::after {
         width: 13.3vw;
+        margin-right: 0;
     }
     .quiz .sc-cont01 .col-right::before {
         width: 13vw;

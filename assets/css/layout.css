@@ -247,10 +247,10 @@ footer small {
 
 /* 작은 pc */
 @media (min-width:769px) and (max-width:1300px) {
-    /* #header {
+    #header {
         height: 8.69vh;
         max-height: 113px;
-    } */
+    }
     #header .logo-area img {
         width: 14.3vw;
     }

@@ -78,11 +78,11 @@
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    // speed: 1500,
-    // autoplay: {
-    //   delay: 7000,           
-    //   disableOnInteraction: false, 
-    // },
+    speed: 1500,
+    autoplay: {
+      delay: 7000,           
+      disableOnInteraction: false, 
+    },
     on: {
       slideChangeTransitionStart: function() {
           resetProgressBar();
