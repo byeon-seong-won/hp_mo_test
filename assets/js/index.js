@@ -79,20 +79,21 @@
       prevEl: '.swiper-button-prev',
     },
     speed: 1500,
-    // autoplay: {
-    //   delay: 7000,           
-    //   disableOnInteraction: false, 
-    // },
+    autoplay: {
+      delay: 7000,           
+      disableOnInteraction: false, 
+    },
     on: {
       slideChangeTransitionStart: function() {
-          resetProgressBar();
-          reseteveryAni();
-      },
-      slideChangeTransitionEnd: function() {
-          startProgressBar();
-          everyAni(); 
-          quizAni();
-      }
+        resetProgressBar();
+        reseteveryAni();
+        resetGifAnimation(); 
+    },
+    slideChangeTransitionEnd: function() {
+        startProgressBar();
+        everyAni(); 
+        quizAni();
+    }
     }
   });
 
@@ -119,12 +120,12 @@
   function resetGifAnimation() {
     const $gif = $('section .thumb-area > div > img.video');
     const src = $gif.attr('src'); 
-    gif.attr('src', '');
-    $gif.attr('src', src)
+    $gif.attr('src', '');         
+    $gif.attr('src', src);       
   }
   function quizAni() {
-    const $gif = $('section .thumb-area > div > img.video');
-    $gif.css('display', 'block');
+      const $gif = $('section .thumb-area > div > img.video');
+      $gif.css('display', 'block');
   }
 
   // reviewclick 애니메이션
@@ -156,35 +157,6 @@
     progressBar.style.width = '0';
   }
 
-  // startProgressBar();
-
-
-
-
-
-
-
-
-
-
-
-
-
-// ----------------- 에브리클릭 -----------------  
-
-  // // 에브리클릭 - 일상관리
-  // const snsSlide = new Swiper('.snsSlide', {
-  //   direction: 'horizontal', 
-  //   // loop: true,               
-  //   allowTouchMove: false,
-  //   spaceBetween: 13,
-  //   speed: 1000, 
-  //   loopAdditionalSlides : 1,
-  //   autoplay: {
-  //       delay: 0, 
-  //       disableOnInteraction: false,
-  //   },
-  // });
 
 
   const snsSlide = new Swiper('.snsSlide', {
@@ -192,45 +164,6 @@
     spaceBetween: 13, 
     speed: 600,
   });
-
-
-  // 홈페이지 바로가기 애니메이션
-  // gsap.to(".link-home", {
-  //   y: -20, 
-  //   duration: 1,
-  //   repeat: -1, 
-  //   yoyo: true, 
-  //   ease: "power4.inOut", 
-  //   scroller: '.lenis-wrap', 
-  // });
-
-
-
-
-
-
-  // 일상관리 progress bar
-  // const progressBar = gsap.timeline({
-  //   scrollTrigger:{
-  //     trigger : '.sc-daily',
-  //     start:"50% 70%",
-  //     end:"50% 80%",
-  //     scrub:1,
-  //     ease: "power4.out",
-  //     stagger: {
-  //       amount: 1
-  //     },
-  //   },
-  // })
-  // progressBar.to(".progress-bar .guage-area", 1.8, {
-  //   width:'100%',
-  //   height:'100%',
-  // })
-
-
-
-
-
 
 
 
@@ -241,12 +174,6 @@
       $('.aniEffect-sh').addClass('click');
     }, 500);
     
-
-
-
-  
-
-
 
 
 
@@ -568,78 +495,4 @@
     },
   });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // 캐시사용 카드 노출
-    // const card = gsap.timeline({
-    //   scrollTrigger:{
-    //     trigger : '.sc-cash',
-    //     start:"10% 50%",
-    //     end:"50% 70%",
-    //     scrub:1,
-    //     ease: "power4.out",
-    //     stagger: {
-    //       amount: 1
-    //     },
-    //   },
-    // })
-    // card.fromTo(".sc-cash .coupon-mo", 
-    //   { y: "-30%", opacity: 0 },  
-    //   { y: "0%", opacity: 1, duration: 2},  
-    //   "coupon"
-    // );
-    // card.fromTo(".sc-cash .coupon", 
-    //   { y: "100%", opacity: 0 },  
-    //   { y: "0%", opacity: 1, stagger: 20},  
-    //   "coupon +=10"
-    // );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-// ----------------- 퀴즈클릭 -----------------  
-// 기대효과 03
-const keySlide = new Swiper('.keySlide', {
-  direction : 'vertical',
-  autoplay: {
-    disableOnInteraction: false,
-  },
-  centeredSlides: true,
-  allowTouchMove: false,
-  speed: 200,
-});
 

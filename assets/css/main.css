@@ -271,7 +271,7 @@ section.review .col-right .mo.mo-display {
     font-family: 'roboto', sans-serif;
     letter-spacing: -0.025em; 
   }
-  .thumb-area>p.zero {right: 95px;}
+  .thumb-area>p.zero {right: 95px;display: block;}
   .thumb-area>p.count {opacity: 0;right: 85px;}
 
 
