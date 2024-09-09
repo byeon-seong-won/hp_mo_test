@@ -100,7 +100,7 @@ section .thumb-area > div > img.ico-coin {
   position: absolute;
   width: 88px !important;
   height: 65px;
-  top: 230px;
+  top: 210px;
   right: -20px;
   width: 18px;
   z-index: 1000;
@@ -284,10 +284,14 @@ section.review .col-right .mo.mo-display {
   opacity: 0;
   z-index: 0;
 }
-.thumb-area>img.money.money02 {top: 135px;
-  right: 100px;}
-.thumb-area>img.money.money03 {    top: 120px;
-  right: 110px;}
+.thumb-area>img.money.money02 {
+  top: 135px;
+  right: 95px;
+}
+.thumb-area>img.money.money03 {    
+  top: 120px;
+  right: 80px;
+}
 .thumb-area>img.money.effect {
     -webkit-animation-name: rotateUp;
     animation: rotateUp;
@@ -526,11 +530,11 @@ section.review .col-right .mo.mo-display {
   }
   .thumb-area>img.money.money02 {
     top: 10.38vw;
-    right: 7.69vw;
+    right: 7.3vw;
   }
   .thumb-area>img.money.money03 {
       top: 9.23vw;
-      right: 8.46vw;
+      right: 6.15vw;
   }
 
 
@@ -561,8 +565,8 @@ section .thumb-area .detail {
 section .thumb-area > div > img.ico-coin {
   width: 6.76vw !important;
   height: 5vw;
-  top: 17.69vw;
-  right: -1.53vw;
+  top: 16vw;
+  right: -0.5vw;
 }
 
 
@@ -728,7 +732,7 @@ section .thumb-area > div > img.ico-coin {
   width: 18.75vw !important;
   height: 13.8vw;
   top: 48vw;
-  right: -2.6vw;
+  right: -1.5vw;
 }
 
 
