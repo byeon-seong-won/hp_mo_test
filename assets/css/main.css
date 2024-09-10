@@ -688,22 +688,6 @@ section .thumb-area > div > img.ico-coin {
     top: 29vw;
     right: 21vw;
   }
-  @-webkit-keyframes rotateUp {
-    0% {
-      -webkit-transform-origin: 0 0;
-      transform-origin: 0 0;
-      -webkit-transform: perspective(800px) rotateX(0deg) translateZ(0px);
-      transform: perspective(800px) rotateX(0deg) translateZ(0px);
-    }
-    50% {opacity: 1;}
-    100% {
-      opacity: 0;
-      -webkit-transform-origin: 50% 50%;
-      transform-origin: 50% 50%;
-      -webkit-transform: rotateX(180deg) translateZ(100px);
-      transform: rotateX(180deg) translateZ(100px);
-    }
-  }
   @keyframes rotateUp {
     0% {
       opacity: 0;
@@ -717,8 +701,8 @@ section .thumb-area > div > img.ico-coin {
       opacity: 0;
       -webkit-transform-origin: 50% 50%;
       transform-origin: 50% 50%;
-      -webkit-transform: rotateX(180deg) translateZ(100px);
-      transform: rotateX(180deg) translateZ(100px);
+      -webkit-transform: rotateX(180deg) translateZ(-100px);
+      transform: rotateX(180deg) translateZ(-100px);
     }
   }
 
