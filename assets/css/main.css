@@ -701,8 +701,8 @@ section .thumb-area > div > img.ico-coin {
       opacity: 0;
       -webkit-transform-origin: 50% 50%;
       transform-origin: 50% 50%;
-      -webkit-transform: rotateX(180deg) translateZ(-100px);
-      transform: rotateX(180deg) translateZ(-100px);
+      -webkit-transform: rotateX(180deg) translateZ(100px);
+      transform: rotateX(180deg) translateZ(100px);
     }
   }
 
