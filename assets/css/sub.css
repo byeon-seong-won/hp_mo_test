@@ -80,7 +80,7 @@
     margin-left: 20px;
 }
 .sc-ident .title-desc > div:last-child span {
-    right: -20px;
+    right: -1.53vw;
 }
 .sc-ident .desc {
     text-align: center;
@@ -1459,13 +1459,13 @@ section.sc-attend .ser-inner {
     }
     .sc-ident .title-desc {
         margin-top: 4.81vw;
-        gap: 12.2vw;
+        gap: 10vw;
     }
     .sc-ident .title-desc p {
         font-size: 7.42vw;
     }
     .sc-ident .title-desc span {
-        font-size: 1.82vw;
+        font-size: 2.5vw;
     }
     .sc-ident .desc p {
         margin-top: 18vw;
