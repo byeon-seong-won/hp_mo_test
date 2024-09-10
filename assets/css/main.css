@@ -691,8 +691,8 @@ section .thumb-area > div > img.ico-coin {
   @keyframes rotateUp {
     0% {
       opacity: 0;
-      -webkit-transform-origin: 0 0;
-      transform-origin: 0 0;
+      -webkit-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
       -webkit-transform: rotateX(0deg) translateZ(0px);
       transform: rotateX(0deg) translateZ(0px);
     }
