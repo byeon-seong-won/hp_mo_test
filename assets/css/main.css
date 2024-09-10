@@ -322,17 +322,13 @@ section.review .col-right .mo.mo-display {
 @keyframes rotateUp {
   0% {
     opacity: 0;
-    -webkit-transform-origin: 0 0;
     transform-origin: 0 0;
-    -webkit-transform: rotateX(0deg) translateZ(0px);
     transform: rotateX(0deg) translateZ(0px);
   }
   50% {opacity: 1;}
   100% {
     opacity: 0;
-    -webkit-transform-origin: 50% 0;
     transform-origin: 50% 0;
-    -webkit-transform: rotateX(180deg) translateZ(100px);
     transform: rotateX(180deg) translateZ(100px);
   }
 }
