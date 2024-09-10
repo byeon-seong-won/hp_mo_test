@@ -692,8 +692,8 @@ section .thumb-area > div > img.ico-coin {
     0% {
       -webkit-transform-origin: 0 0;
       transform-origin: 0 0;
-      -webkit-transform: perspective(300px) rotateX(0deg) translateZ(0px);
-      transform: perspective(300px) rotateX(0deg) translateZ(0px);
+      -webkit-transform: perspective(800px) rotateX(0deg) translateZ(0px);
+      transform: perspective(800px) rotateX(0deg) translateZ(0px);
     }
     50% {opacity: 1;}
     100% {
