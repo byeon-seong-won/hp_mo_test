@@ -699,7 +699,7 @@ section .thumb-area > div > img.ico-coin {
     100% {
       opacity: 0;
       -webkit-transform-origin: 50% 50%;
-      transform-origin: 50% 0;
+      transform-origin: 50% 50%;
       -webkit-transform: rotateX(180deg) translateZ(100px);
       transform: rotateX(180deg) translateZ(100px);
     }
@@ -715,8 +715,8 @@ section .thumb-area > div > img.ico-coin {
     50% {opacity: 1;}
     100% {
       opacity: 0;
-      -webkit-transform-origin: 50% 0;
-      transform-origin: 50% 0;
+      -webkit-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
       -webkit-transform: rotateX(180deg) translateZ(100px);
       transform: rotateX(180deg) translateZ(100px);
     }
