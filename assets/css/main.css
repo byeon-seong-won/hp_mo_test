@@ -693,16 +693,17 @@ section .thumb-area > div > img.ico-coin {
       opacity: 0;
       -webkit-transform-origin: 50% 50%;
       transform-origin: 50% 50%;
-      -webkit-transform: rotateX(0deg) translateZ(0px);
-      transform: rotateX(0deg) translateZ(0px);
+      -webkit-transform: rotateX(0deg) translateZ(100px);
+      transform: rotateX(0deg) translateZ(100px);
     }
-    50% {opacity: 1;}
+    50% {opacity: 0.5;}
+    80% {opacity: 0.2;}
     100% {
       opacity: 0;
       -webkit-transform-origin: 50% 50%;
       transform-origin: 50% 50%;
-      -webkit-transform: rotateX(180deg) translateZ(-100px);
-      transform: rotateX(180deg) translateZ(100px);
+      -webkit-transform: rotateX(180deg) translateZ(0);
+      transform: rotateX(180deg) translateZ(0);
     }
   }
 
