@@ -293,17 +293,17 @@ section.review .col-right .mo.mo-display {
   right: 80px;
 }
 .thumb-area>img.money.effect {
-    -webkit-animation-name: rotateUp_sa;
+    -webkit-animation-name: rotateUp;
     animation: rotateUp;
-    /* -webkit-transform-origin: center bottom;
+    -webkit-transform-origin: center bottom;
     -ms-transform-origin: center bottom;
-    transform-origin: center bottom; */
+    transform-origin: center bottom;
     -webkit-animation-duration: 1.3s;
     animation-duration: 1.3s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
     animation-delay:1.3s;
-    border: 1px solid green;
+    border: 1px solid red;
   }
 .thumb-area>img.money.money02.effect {animation-delay:1.2s;}
 .thumb-area>img.money.money03.effect {animation-delay:1.4s;} 
@@ -319,12 +319,12 @@ section.review .col-right .mo.mo-display {
   100% {
     opacity: 0;
     transform-origin: 50% 0;
-    transform: rotateX(180deg) translateZ(100px);
+    transform: translateZ(100px) rotateX(180deg);
   }
 }
 
 
-  @-webkit-keyframes rotateUp_sa {
+  /* @-webkit-keyframes rotateUp_sa {
     0% {
       opacity: 0;
       transform-origin: 0 0;
@@ -336,7 +336,7 @@ section.review .col-right .mo.mo-display {
       transform-origin: 50% 0;
       transform: rotateX(180deg) translateZ(-100px);
     }
-  }
+  } */
 
   /* <------ /////애니메이션//// ------->  */
 
