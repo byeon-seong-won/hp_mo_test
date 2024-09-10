@@ -308,7 +308,7 @@ section.review .col-right .mo.mo-display {
 .thumb-area>img.money.money02.effect {animation-delay:1.2s;}
 .thumb-area>img.money.money03.effect {animation-delay:1.4s;} 
   
-/* @-webkit-keyframes rotateUp {
+@-webkit-keyframes rotateUp {
   0% {
     -webkit-transform-origin: 0 0;
     transform-origin: 0 0;
@@ -320,10 +320,10 @@ section.review .col-right .mo.mo-display {
     opacity: 0;
     -webkit-transform-origin: 50% 0;
     transform-origin: 50% 0;
-    -webkit-transform: rotateX(180deg) translateZ(100px);
-    transform: rotateX(180deg) translateZ(100px);
+    -webkit-transform: rotateX(180deg) translateZ(-100px);
+    transform: rotateX(180deg) translateZ(-100px);
   }
-} */
+}
 @keyframes rotateUp {
   0% {
     opacity: 0;
@@ -338,7 +338,7 @@ section.review .col-right .mo.mo-display {
     -webkit-transform-origin: 50% 0;
     transform-origin: 50% 0;
     -webkit-transform: rotateX(180deg) translateZ(-100px);
-    transform: rotateX(180deg) translateZ(100px);
+    transform: rotateX(180deg) translateZ(-100px);
   }
 }
   /* <------ /////애니메이션//// ------->  */
